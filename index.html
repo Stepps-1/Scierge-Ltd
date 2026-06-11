@@ -1,0 +1,3052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+<link rel="preconnect" href="https://iili.io">
+<link rel="dns-prefetch" href="https://iili.io">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="dns-prefetch" href="https://i.postimg.cc">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojMmRkNGJmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzBkOTQ4OCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHBvbHlnb24gcG9pbnRzPSIzMiw0IDYwLDIyIDMyLDYwIDQsMjIiIGZpbGw9InVybCgjZykiLz4KICA8cG9seWdvbiBwb2ludHM9IjMyLDQgNjAsMjIgMzIsMjIiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4xOCkiLz4KICA8cG9seWdvbiBwb2ludHM9IjMyLDQgNCwyMiAzMiwyMiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA4KSIvPgogIDxwb2x5Z29uIHBvaW50cz0iNCwyMiAzMiw2MCAzMiwyMiIgZmlsbD0icmdiYSgwLDAsMCwwLjIpIi8+CiAgPHBvbHlnb24gcG9pbnRzPSI2MCwyMiAzMiw2MCAzMiwyMiIgZmlsbD0icmdiYSgwLDAsMCwwLjA4KSIvPgogIDxwb2x5Z29uIHBvaW50cz0iMzIsNCA2MCwyMiAzMiw2MCA0LDIyIiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC41KSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICA8bGluZSB4MT0iNCIgeTE9IjIyIiB4Mj0iNjAiIHkyPSIyMiIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMykiIHN0cm9rZS13aWR0aD0iMSIvPgo8L3N2Zz4=">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojMmRkNGJmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzBkOTQ4OCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHBvbHlnb24gcG9pbnRzPSIzMiw0IDYwLDIyIDMyLDYwIDQsMjIiIGZpbGw9InVybCgjZykiLz4KICA8cG9seWdvbiBwb2ludHM9IjMyLDQgNjAsMjIgMzIsMjIiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4xOCkiLz4KICA8cG9seWdvbiBwb2ludHM9IjMyLDQgNCwyMiAzMiwyMiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA4KSIvPgogIDxwb2x5Z29uIHBvaW50cz0iNCwyMiAzMiw2MCAzMiwyMiIgZmlsbD0icmdiYSgwLDAsMCwwLjIpIi8+CiAgPHBvbHlnb24gcG9pbnRzPSI2MCwyMiAzMiw2MCAzMiwyMiIgZmlsbD0icmdiYSgwLDAsMCwwLjA4KSIvPgogIDxwb2x5Z29uIHBvaW50cz0iMzIsNCA2MCwyMiAzMiw2MCA0LDIyIiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC41KSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICA8bGluZSB4MT0iNCIgeTE9IjIyIiB4Mj0iNjAiIHkyPSIyMiIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMykiIHN0cm9rZS13aWR0aD0iMSIvPgo8L3N2Zz4=">
+<title>SCIERGE | Your World, Perfectly Arranged</title>
+
+<!-- ═══════════════════════════════════════════════════
+     CORE SEO META TAGS
+════════════════════════════════════════════════════ -->
+<meta name="description" content="SCIERGE offers bespoke luxury concierge packages – private jet charters, VIP tickets, chauffeur services, yacht events, helicopter tours, and exclusive lifestyle experiences. Elevate every moment.">
+<meta name="keywords" content="luxury concierge service, VIP concierge packages, private jet charter, chauffeur service, yacht rental, helicopter tours, bespoke lifestyle management, premium concierge, exclusive experiences">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="author" content="SCIERGE">
+<link rel="canonical" href="https://www.scierge.it.com/">
+
+<!-- ═══════════════════════════════════════════════════
+     OPEN GRAPH (Facebook, LinkedIn, WhatsApp, etc.)
+════════════════════════════════════════════════════ -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SCIERGE">
+<meta property="og:title" content="SCIERGE | Luxury Concierge Packages – VIP Experiences & Premium Services">
+<meta property="og:description" content="Bespoke luxury concierge packages – private jet charters, VIP access, chauffeur services, yacht events, helicopter tours & more. Elevate your lifestyle with SCIERGE.">
+<meta property="og:url" content="https://www.facebook.com/people/Scierge/61590704127785/">
+<meta property="og:image" content="https://iili.io/Cfvwo0l.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SCIERGE – Luxury Concierge Packages">
+<meta property="og:locale" content="en_US">
+
+<!-- ═══════════════════════════════════════════════════
+     TWITTER / X CARD
+════════════════════════════════════════════════════ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@scierge">
+<meta name="twitter:creator" content="@scierge">
+<meta name="twitter:title" content="SCIERGE | Luxury Concierge Packages">
+<meta name="twitter:description" content="Bespoke luxury concierge packages – private jet charters, VIP access, chauffeur services, yacht events & more. Elevate your lifestyle.">
+<meta name="twitter:image" content="https://www.scierge.com/og-image.jpg">
+<meta name="twitter:image:alt" content="SCIERGE – Luxury Concierge Packages">
+
+<!-- ═══════════════════════════════════════════════════
+     SCHEMA.ORG STRUCTURED DATA (JSON-LD)
+     Helps Google display rich results in search
+════════════════════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.scierge.it.com",
+      "name": "SCIERGE",
+      "url": "https://www.scierge.it.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://iili.io/Cfvwo0l.png",
+        "width": 200,
+        "height": 60
+      },
+      "description": "SCIERGE is a luxury concierge service offering bespoke VIP experiences including private jet charters, chauffeur services, yacht events, helicopter tours, and exclusive lifestyle management.",
+      "sameAs": [
+        "https://www.instagram.com/scierge",
+        "https://twitter.com/scierge",
+        "https://www.linkedin.com/company/scierge",
+        "https://www.facebook.com/people/Scierge/61590704127785/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "availableLanguage": "English"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.scierge.it.com",
+      "url": "https://www.scierge.it.com/",
+      "name": "SCIERGE",
+      "publisher": { "@id": "https://www.scierge.it.com" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.scierge.it.com",
+      "url": "https://www.scierge.it.com",
+      "name": "Luxury Concierge Packages – SCIERGE",
+      "description": "Explore SCIERGE's bespoke luxury concierge packages – private jets, VIP tickets, yacht events, helicopter tours, chauffeur services, and premium lifestyle experiences.",
+      "isPartOf": { "@id": "https://www.scierge.it.com" },
+      "about": { "@id": "https://www.scierge.it.com" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.scierge.it.com",
+      "name": "Luxury Concierge Service",
+      "provider": { "@id": "https://www.scierge.it.com" },
+      "description": "Premium concierge packages covering private jet charters, chauffeur services, VIP event tickets, yacht and cruise events, helicopter tours, wellness & spa, luxury car hire, and exclusive adventure experiences.",
+      "serviceType": "Luxury Lifestyle Concierge",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "SCIERGE Concierge Packages",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private Jet Charter" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Chauffeur Service" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "VIP Event Tickets" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Yacht & Cruise Events" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Helicopter Tours" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wellness & Spa" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Luxury Car Hire" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private Dining & Restaurant Booking" } }
+        ]
+      }
+    }
+  ]
+}
+</script>
+
+<!-- ═══════════════════════════════════════════════════
+     PERFORMANCE & MOBILE
+════════════════════════════════════════════════════ -->
+<meta name="theme-color" content="#2dd4bf">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="SCIERGE">
+
+
+
+
+
+
+
+
+<style>
+  /* Font Awesome font-display override for faster icon rendering */
+  @font-face { font-family: 'Font Awesome 6 Free'; font-display: swap; }
+  @font-face { font-family: 'Font Awesome 6 Brands'; font-display: swap; }
+  :root {
+    --dark-950: #06060a;
+    --dark-900: #0a0a0f;
+    --dark-800: #12121a;
+    --dark-700: #1a1a25;
+    --dark-600: #222232;
+    --dark-500: #2c2c40;
+    --teal-400: #2dd4bf;
+    --teal-500: #14b8a6;
+    --teal-600: #0d9488;
+    --text-primary: #f0f0f5;
+    --text-muted: #6b7280;
+    --text-subtle: #374151;
+    --border: rgba(45,212,191,0.15);
+    --border-soft: rgba(255,255,255,0.06);
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+  body {
+    background: var(--dark-950);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background: rgba(6,6,10,0.92);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border-soft);
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    z-index: 101;
+  }
+
+  .nav-emblem {
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--teal-400), var(--teal-600));
+    box-shadow: 0 0 18px rgba(45,212,191,0.35);
+    display: flex; align-items: center; justify-content: center;
+    position: relative; overflow: hidden; flex-shrink: 0;
+  }
+
+  .nav-emblem::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent 60%);
+  }
+
+  .nav-emblem svg { width: 18px; height: 18px; position: relative; z-index: 1; }
+
+  .nav-wordmark {
+    font-size: 1.1rem; font-weight: 800;
+    color: var(--text-primary); letter-spacing: -0.3px;
+  }
+  .nav-wordmark .c { color: var(--teal-400); }
+
+  .nav-links { display: none; list-style: none; }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    background: linear-gradient(135deg, var(--teal-400), var(--teal-600));
+    color: var(--dark-950);
+    border: none; padding: 0.5rem 1.1rem; border-radius: 99px;
+    font-family: inherit; font-size: 0.75rem; font-weight: 700;
+    cursor: pointer; box-shadow: 0 4px 20px rgba(45,212,191,0.3);
+    transition: box-shadow 0.2s, transform 0.15s;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 767px) {
+    .nav-cta { display: none; }
+  }
+
+  nav.mobile-open .nav-cta {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    background: var(--dark-800);
+    color: var(--teal-400);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    border-bottom: 1px solid var(--border-soft);
+    border-top: 1px solid var(--border-soft);
+    animation: slideDown 0.3s ease;
+    text-decoration: none;
+  }
+
+  .nav-cta:hover {
+    box-shadow: 0 6px 28px rgba(45,212,191,0.5);
+    transform: translateY(-1px);
+  }
+
+  .mobile-menu-btn {
+    display: flex; flex-direction: column; gap: 5px;
+    padding: 8px; background: rgba(45,212,191,0.1);
+    border: 1px solid rgba(45,212,191,0.2); border-radius: 8px;
+    cursor: pointer; z-index: 101;
+    touch-action: manipulation; -webkit-tap-highlight-color: transparent;
+  }
+
+  .mobile-menu-btn span {
+    width: 22px; height: 2px;
+    background: var(--teal-400); border-radius: 2px;
+    transition: all 0.3s ease; display: block;
+  }
+
+  nav.mobile-open .mobile-menu-btn span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+  nav.mobile-open .mobile-menu-btn span:nth-child(2) { opacity: 0; }
+  nav.mobile-open .mobile-menu-btn span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+  nav.mobile-open .nav-links {
+    display: flex; flex-direction: column;
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--dark-800); padding: 1rem; gap: 0;
+    border-bottom: 1px solid var(--border-soft);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5); list-style: none;
+    animation: slideDown 0.3s ease;
+  }
+
+  nav.mobile-open .nav-links li { border-bottom: 1px solid var(--border-soft); }
+  nav.mobile-open .nav-links li:last-child { border-bottom: none; }
+  nav.mobile-open .nav-links a {
+    display: flex; align-items: center; padding: 1rem 0.5rem;
+    font-size: 0.95rem; color: var(--teal-400); text-decoration: none;
+    font-weight: 700; transition: color 0.2s; min-height: 44px;
+  }
+  nav.mobile-open .nav-links a:hover { color: var(--teal-500); }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── NAV SEARCH ── */
+  .nav-search-btn {
+    display: flex; align-items: center; justify-content: center;
+    width: 34px; height: 34px;
+    background: rgba(45,212,191,0.1);
+    border: 1px solid rgba(45,212,191,0.2);
+    border-radius: 8px;
+    color: var(--teal-400);
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background 0.2s, border-color 0.2s;
+    flex-shrink: 0;
+  }
+  .nav-search-btn:hover { background: rgba(45,212,191,0.18); border-color: rgba(45,212,191,0.4); }
+
+  .nav-search-wrap {
+    display: flex; align-items: center;
+    max-width: 0; overflow: hidden;
+    transition: max-width 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.25s ease;
+    opacity: 0;
+    position: relative;
+  }
+  .nav-search-wrap.open {
+    max-width: 260px;
+    opacity: 1;
+  }
+  @media (max-width: 767px) {
+    .nav-search-wrap.open { max-width: 160px; }
+  }
+
+  .nav-search-input {
+    background: var(--dark-700);
+    border: 1px solid rgba(45,212,191,0.25);
+    border-radius: 8px;
+    padding: 0.45rem 2rem 0.45rem 0.75rem;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 0.82rem;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.2s;
+    -webkit-appearance: none;
+  }
+  .nav-search-input:focus { border-color: rgba(45,212,191,0.55); }
+  .nav-search-input::placeholder { color: var(--text-muted); }
+
+  .nav-search-clear {
+    position: absolute; right: 8px;
+    background: none; border: none;
+    color: var(--text-muted); cursor: pointer;
+    font-size: 0.7rem; padding: 2px;
+    display: none;
+  }
+  .nav-search-clear.visible { display: block; }
+
+  .nav-search-results {
+    position: fixed;
+    top: 64px; left: 50%; transform: translateX(-50%);
+    width: min(calc(100vw - 2rem), 420px);
+    background: var(--dark-800);
+    border: 1px solid rgba(45,212,191,0.2);
+    border-radius: 12px;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.6);
+    z-index: 200;
+    overflow: hidden;
+    animation: slideDown 0.2s ease;
+  }
+  .nav-search-result-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border-soft);
+    cursor: pointer;
+    transition: background 0.15s;
+    text-decoration: none;
+  }
+  .nav-search-result-item:last-child { border-bottom: none; }
+  .nav-search-result-item:hover { background: rgba(45,212,191,0.06); }
+  .nav-search-result-icon { color: var(--teal-400); font-size: 0.85rem; width: 18px; text-align: center; flex-shrink: 0; }
+  .nav-search-result-name { font-size: 0.85rem; font-weight: 600; color: var(--text-primary); }
+  .nav-search-result-loc { font-size: 0.72rem; color: var(--text-muted); margin-top: 1px; }
+  .nav-search-no-results { padding: 1rem; text-align: center; font-size: 0.82rem; color: var(--text-muted); }
+
+  /* ── HERO ── */
+  /* ── Cookie Consent Bar ── */
+  #cookie-bar {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(calc(100% + 2rem));
+    z-index: 9999;
+    width: min(calc(100vw - 2rem), 780px);
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #cookie-bar.cookie-bar--visible {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  #cookie-bar.cookie-bar--hidden {
+    transform: translateX(-50%) translateY(calc(100% + 2rem));
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .cookie-inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: var(--dark-800);
+    border: 1px solid rgba(45,212,191,0.18);
+    border-radius: 16px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.55), 0 0 0 1px rgba(45,212,191,0.05), 0 0 60px rgba(45,212,191,0.04);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cookie-inner::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1.5px;
+    background: linear-gradient(90deg, transparent, var(--teal-400), var(--teal-600), transparent);
+    opacity: 0.7;
+  }
+
+  .cookie-icon-wrap {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(45,212,191,0.08);
+    border: 1px solid rgba(45,212,191,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cookie-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .cookie-headline {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.1px;
+    margin-bottom: 0.2rem;
+  }
+
+  .cookie-body {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  .cookie-link {
+    color: var(--teal-400);
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .cookie-link:hover {
+    text-decoration: underline;
+  }
+
+  .cookie-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-shrink: 0;
+    align-items: center;
+  }
+
+  .cookie-btn-primary {
+    background: linear-gradient(135deg, var(--teal-400), var(--teal-600));
+    color: var(--dark-950);
+    border: none;
+    padding: 0.55rem 1.1rem;
+    border-radius: 99px;
+    font-family: inherit;
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(45,212,191,0.3);
+    transition: box-shadow 0.2s, transform 0.15s;
+    white-space: nowrap;
+    touch-action: manipulation;
+    min-height: 36px;
+  }
+
+  .cookie-btn-primary:hover {
+    box-shadow: 0 6px 24px rgba(45,212,191,0.45);
+    transform: translateY(-1px);
+  }
+
+  .cookie-btn-ghost {
+    background: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--border-soft);
+    padding: 0.55rem 1rem;
+    border-radius: 99px;
+    font-family: inherit;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+    touch-action: manipulation;
+    min-height: 36px;
+  }
+
+  .cookie-btn-ghost:hover {
+    color: var(--teal-400);
+    border-color: var(--border);
+  }
+
+  .cookie-close {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem;
+    width: 26px;
+    height: 26px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border-soft);
+    border-radius: 50%;
+    color: var(--text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s, background 0.2s;
+    touch-action: manipulation;
+    flex-shrink: 0;
+  }
+
+  .cookie-close:hover {
+    color: var(--teal-400);
+    background: rgba(45,212,191,0.08);
+    border-color: rgba(45,212,191,0.2);
+  }
+
+  @media (max-width: 600px) {
+    .cookie-inner {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 1rem;
+      padding-right: 2.5rem;
+    }
+
+    .cookie-icon-wrap { display: none; }
+
+    .cookie-actions {
+      width: 100%;
+    }
+
+    .cookie-btn-primary,
+    .cookie-btn-ghost {
+      flex: 1;
+      justify-content: center;
+    }
+  }
+
+  
+.hero {
+    min-height: 90vh;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; overflow: hidden; padding: 7rem 1.5rem 5rem;
+  }
+
+  .hero-bg {
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 70% 60% at 65% 40%, rgba(45,212,191,0.10) 0%, transparent 60%),
+                radial-gradient(ellipse 50% 70% at 15% 75%, rgba(45,212,191,0.06) 0%, transparent 55%),
+                linear-gradient(135deg, var(--dark-950) 0%, var(--dark-900) 50%, #0a0a12 100%);
+    z-index: 0;
+  }
+
+  .hero-grid {
+    position: absolute; inset: 0; opacity: 0.03;
+    background-image: linear-gradient(rgba(45,212,191,1) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(45,212,191,1) 1px, transparent 1px);
+    background-size: 72px 72px; z-index: 0;
+  }
+
+  .hero-glow {
+    position: absolute; top: 20%; right: 10%;
+    width: 300px; height: 300px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(45,212,191,0.07) 0%, transparent 70%);
+    pointer-events: none; z-index: 0;
+  }
+
+  .hero-content {
+    position: relative; z-index: 2; max-width: 780px;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 5px 14px; border-radius: 99px;
+    background: rgba(45,212,191,0.10);
+    border: 1px solid rgba(45,212,191,0.25); margin-bottom: 1.5rem;
+  }
+
+  .hero-badge-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--teal-400); animation: badgePulse 2s ease-in-out infinite;
+  }
+
+  @keyframes badgePulse {
+    0%,100% { box-shadow: 0 0 0 0 rgba(45,212,191,0.5); }
+    50% { box-shadow: 0 0 0 5px rgba(45,212,191,0); }
+  }
+
+  .hero-badge-label {
+    font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.18em; color: var(--teal-400); text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 8vw, 4rem); font-weight: 800;
+    line-height: 1.1; color: var(--text-primary);
+    letter-spacing: -1px; margin-bottom: 1rem;
+  }
+  h1 em { font-style: normal; color: var(--teal-400); }
+
+  .hero-sub {
+    font-size: 1rem; line-height: 1.7; color: #e8e8f0;
+    max-width: 560px; margin-bottom: 2rem;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.8), 0 2px 20px rgba(0,0,0,0.6);
+    font-weight: 500;
+  }
+
+  .hero-actions {
+    display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;
+  }
+
+  .btn-primary {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    background: linear-gradient(135deg, var(--teal-400), var(--teal-600));
+    color: var(--dark-950); border: none; padding: 0.85rem 1.8rem;
+    font-family: inherit; font-size: 0.85rem; font-weight: 700;
+    border-radius: 99px; cursor: pointer; text-decoration: none;
+    box-shadow: 0 8px 32px rgba(45,212,191,0.35);
+    transition: box-shadow 0.2s, transform 0.15s; min-height: 48px;
+  }
+  .btn-primary:hover { box-shadow: 0 12px 40px rgba(45,212,191,0.5); transform: translateY(-1px); }
+
+  .btn-ghost {
+    background: transparent; color: #e8e8f0;
+    border: 1px solid rgba(255,255,255,0.35); text-shadow: 0 1px 6px rgba(0,0,0,0.7); padding: 0.85rem 1.5rem;
+    font-family: inherit; font-size: 0.85rem; font-weight: 600;
+    border-radius: 99px; cursor: pointer; text-decoration: none;
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    transition: color 0.2s, border-color 0.2s; min-height: 48px;
+  }
+  .btn-ghost:hover { color: var(--teal-400); border-color: var(--border); }
+
+  /* ── SECTION COMMON ── */
+  section { padding: 3rem 1.5rem; position: relative; }
+
+  .section-label {
+    font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--teal-400); margin-bottom: 0.75rem;
+    display: flex; align-items: center; gap: 0.8rem; font-weight: 700;
+  }
+  .section-label::before {
+    content: ''; display: block; width: 20px; height: 2px;
+    background: linear-gradient(90deg, var(--teal-400), var(--teal-600)); border-radius: 2px;
+  }
+
+  h2 {
+    font-size: clamp(1.6rem, 5vw, 2.4rem); font-weight: 800;
+    line-height: 1.15; color: var(--text-primary);
+    margin-bottom: 0.75rem; letter-spacing: -0.5px;
+  }
+  h2 em { font-style: normal; color: var(--teal-400); }
+
+  .section-intro {
+    font-size: 0.95rem; line-height: 1.7; color: var(--text-muted);
+    max-width: 560px; margin-bottom: 2.5rem;
+  }
+
+  /* ── STATS ── */
+  .stats-section {
+    background: var(--dark-800);
+    border-top: 1px solid var(--border-soft);
+    border-bottom: 1px solid var(--border-soft);
+    padding: 2.5rem 1.5rem;
+    position: relative; overflow: hidden;
+  }
+  .stats-section::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--teal-400), var(--teal-600), transparent);
+  }
+  .stats-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 1rem; text-align: center;
+  }
+  .stat-number {
+    font-size: 2.2rem; font-weight: 800; color: var(--teal-400);
+    line-height: 1; margin-bottom: 0.3rem; letter-spacing: -1px;
+  }
+  .stat-label {
+    font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--text-muted); font-weight: 600;
+  }
+
+  /* ── SERVICES GRID ── */
+  .services-section { background: var(--dark-900); }
+
+  .services-grid {
+    display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: 2rem;
+  }
+
+  .service-card {
+    background: var(--dark-800); border: 1px solid var(--border-soft);
+    border-radius: 16px; padding: 1.5rem;
+    position: relative; overflow: hidden;
+    transition: border-color 0.3s, transform 0.2s;
+    cursor: pointer;
+  }
+  .service-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, var(--teal-400), var(--teal-600));
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .service-card:hover { border-color: rgba(45,212,191,0.3); transform: translateY(-3px); }
+  .service-card:hover::before { opacity: 1; }
+
+  .service-icon-wrap {
+    width: 44px; height: 44px; border-radius: 12px;
+    background: rgba(45,212,191,0.10); border: 1px solid rgba(45,212,191,0.2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem; color: var(--teal-400); margin-bottom: 1rem;
+  }
+
+  .service-title {
+    font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.4rem;
+  }
+
+  .service-desc {
+    font-size: 0.83rem; line-height: 1.65; color: var(--text-muted);
+  }
+
+  /* ── PACKAGES ── */
+  .packages-section { background: var(--dark-950); }
+
+  .packages-grid {
+    display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin-top: 2rem;
+  }
+
+  .pkg-card {
+    background: var(--dark-800); border: 1px solid var(--border-soft);
+    border-radius: 18px; overflow: hidden;
+    position: relative; transition: border-color 0.3s, transform 0.2s;
+  }
+  .pkg-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, var(--teal-400), var(--teal-600));
+    opacity: 0; transition: opacity 0.3s; z-index: 1;
+  }
+  .pkg-card:hover { border-color: rgba(45,212,191,0.28); transform: translateY(-3px); }
+  .pkg-card:hover::before { opacity: 1; }
+  .pkg-card.featured {
+    border-color: rgba(45,212,191,0.3);
+  }
+  .pkg-card.featured::before { opacity: 1; }
+
+  .pkg-img {
+    width: 100%; height: 200px; object-fit: cover;
+    display: block;
+  }
+
+  .pkg-img-placeholder {
+    width: 100%; height: 200px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 4rem;
+  }
+
+  /* Package card slideshows */
+  .pkg-slideshow {
+    position: relative; width: 100%; height: 200px; overflow: hidden;
+  }
+  .pkg-slide {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%; object-fit: cover;
+    transition: opacity 1.4s ease;
+  }
+  .pkg-slide:first-child { position: relative; }
+  .pkg-slide-dots {
+    position: absolute; bottom: 0.55rem; right: 0.7rem;
+    display: flex; gap: 5px; z-index: 4;
+  }
+  .pkg-slide-dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: rgba(255,255,255,0.35); transition: background 0.3s;
+  }
+  .pkg-slide-dot.active { background: var(--teal-400); }
+
+  .pkg-body { padding: 1.6rem 1.6rem 1.5rem; }
+  .pkg-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 0.58rem; letter-spacing: 0.13em; text-transform: uppercase;
+    background: rgba(45,212,191,0.10); border: 1px solid rgba(45,212,191,0.2);
+    color: var(--teal-400); padding: 0.22rem 0.7rem;
+    border-radius: 99px; margin-bottom: 0.85rem; font-weight: 700;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;
+  }
+  .pkg-badge.gold {
+    background: rgba(251,191,36,0.10); border-color: rgba(251,191,36,0.25); color: #fbbf24;
+  }
+
+  .pkg-name {
+    font-size: 1.2rem; font-weight: 800; color: var(--text-primary);
+    margin-bottom: 0.35rem; letter-spacing: -0.3px;
+    line-height: 1.25; word-break: break-word; overflow-wrap: break-word;
+  }
+
+  .pkg-tagline {
+    font-size: 0.65rem; font-weight: 700; letter-spacing: 0.13em;
+    text-transform: uppercase; color: var(--teal-400); margin-bottom: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .pkg-desc {
+    font-size: 0.82rem; line-height: 1.65; color: var(--text-muted); margin-bottom: 1.1rem;
+    word-break: break-word; overflow-wrap: break-word;
+  }
+
+  .pkg-perks {
+    list-style: none; display: flex; flex-direction: column; gap: 0.45rem; margin-bottom: 1.35rem;
+  }
+  .pkg-perks li {
+    font-size: 0.78rem; color: var(--text-primary);
+    display: flex; align-items: flex-start; gap: 0.6rem;
+    line-height: 1.4; word-break: break-word; overflow-wrap: break-word;
+  }
+  .perk-check {
+    width: 17px; height: 17px; border-radius: 6px; flex-shrink: 0; margin-top: 1px;
+    background: rgba(45,212,191,0.12); border: 1px solid rgba(45,212,191,0.2);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .perk-check i { font-size: 8px; color: var(--teal-400); }
+
+  .pkg-price-label {
+    font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--text-muted); font-weight: 600; margin-bottom: 0.2rem;
+  }
+  .pkg-price-val {
+    font-size: 1.85rem; font-weight: 800; color: var(--teal-400);
+    letter-spacing: -1px; margin-bottom: 1.1rem;
+  }
+  .pkg-price-val sup { font-size: 0.95rem; }
+
+  .pkg-cta {
+    display: block; width: 100%; padding: 0.85rem;
+    background: linear-gradient(135deg, var(--teal-400), var(--teal-600));
+    color: var(--dark-950); border: none; border-radius: 10px;
+    font-family: inherit; font-size: 0.8rem; font-weight: 700;
+    letter-spacing: 0.07em; text-transform: uppercase;
+    cursor: pointer; transition: filter 0.2s, transform 0.15s;
+    min-height: 48px; touch-action: manipulation;
+  }
+  .pkg-cta:hover { filter: brightness(1.1); transform: translateY(-1px); }
+
+  /* ── BESPOKE EXPERIENCES ── */
+  .bespoke-section { background: var(--dark-900); }
+
+  .exp-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 2rem;
+  }
+
+  .exp-card {
+    position: relative;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 14px;
+    border: 1px solid var(--border-soft);
+    background: var(--dark-800);
+    cursor: pointer;
+    transition: border-color 0.25s, transform 0.25s;
+  }
+  .exp-card:hover { border-color: rgba(45,212,191,0.35); transform: translateY(-4px) scale(1.01); }
+
+  .exp-card-img {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease, opacity 1.4s ease;
+    z-index: 0;
+  }
+  .exp-card:hover .exp-card-img { transform: scale(1.07); }
+
+  .exp-card-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(6,6,10,0.92) 0%, rgba(6,6,10,0.4) 55%, rgba(6,6,10,0.1) 100%);
+    z-index: 1;
+    transition: background 0.3s;
+  }
+  .exp-card:hover .exp-card-overlay {
+    background: linear-gradient(to top, rgba(6,6,10,0.95) 0%, rgba(6,6,10,0.5) 55%, rgba(6,6,10,0.15) 100%);
+  }
+  .exp-card::before { display: none; }
+
+  .exp-card-body {
+    position: relative; z-index: 2;
+    padding: 1.1rem;
+  }
+
+  .exp-icon { font-size: 1.3rem; margin-bottom: 0.5rem; display: block; position: relative; z-index: 2; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); }
+  .exp-name { font-size: 0.9rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem; position: relative; z-index: 2; text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
+  .exp-loc { font-size: 0.7rem; color: var(--teal-400) !important; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; position: relative; z-index: 2; }
+
+  .exp-card-top {
+    position: absolute; top: 0.75rem; right: 0.75rem;
+    z-index: 3;
+  }
+  .exp-card-top-teal {
+    width: 2px; height: 24px; background: linear-gradient(to bottom, var(--teal-400), transparent);
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .exp-card:hover .exp-card-top-teal { opacity: 1; }
+
+  /* ── HOW IT WORKS ── */
+  .how-section { background: var(--dark-800); border-top: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft); }
+
+  .steps-grid {
+    display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 2rem;
+  }
+
+  .step {
+    display: flex; align-items: flex-start; gap: 1rem;
+  }
+
+  .step-num {
+    width: 36px; height: 36px; border-radius: 10px; flex-shrink: 0;
+    background: linear-gradient(135deg, var(--teal-400), var(--teal-600));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.75rem; font-weight: 800; color: var(--dark-950);
+    box-shadow: 0 4px 16px rgba(45,212,191,0.3);
+  }
+
+  .step-title { font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.3rem; }
+  .step-desc { font-size: 0.83rem; line-height: 1.6; color: var(--text-muted); }
+
+  /* ── TESTIMONIAL ── */
+  .testimonial-section {
+    background: var(--dark-800); display: flex; flex-direction: column;
+    padding: 0; border-top: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft);
+  }
+  .testimonial-visual {
+    background: var(--dark-700); min-height: 200px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 5rem; opacity: 0.12; position: relative; overflow: hidden; order: -1;
+  }
+  .testimonial-visual::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(circle at 60% 40%, rgba(45,212,191,0.08) 0%, transparent 60%);
+  }
+  .testimonial-content { padding: 2rem 1.5rem; display: flex; flex-direction: column; justify-content: center; }
+  .quote-mark { font-size: 3rem; line-height: 0.5; color: var(--teal-400); opacity: 0.4; margin-bottom: 0.75rem; font-weight: 800; }
+  .quote-text { font-size: 1.05rem; font-weight: 500; line-height: 1.6; color: var(--text-primary); margin-bottom: 1.5rem; }
+  .quote-author { display: flex; align-items: center; gap: 0.75rem; }
+  .author-avatar {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: rgba(45,212,191,0.1); border: 1px solid rgba(45,212,191,0.25);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem; color: var(--teal-400);
+  }
+  .author-name { font-weight: 700; color: var(--text-primary); font-size: 0.9rem; margin-bottom: 0.15rem; }
+  .author-route { font-size: 0.75rem; color: var(--text-muted); }
+
+  /* ── TRUST BAR ── */
+  .trust-bar {
+    background: var(--dark-900); padding: 1.5rem 1.5rem;
+    border-top: 1px solid var(--border-soft);
+  }
+  .trust-items {
+    display: flex; flex-direction: column; gap: 1rem; align-items: center; text-align: center;
+  }
+  .trust-item {
+    display: flex; align-items: center; gap: 0.65rem; color: var(--text-muted); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  }
+  .trust-item i { color: var(--teal-400); font-size: 1rem; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--dark-900); padding: 2.5rem 1.5rem 1.5rem;
+    border-top: 1px solid var(--border-soft);
+  }
+  .footer-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-bottom: 2rem; }
+  .footer-brand-row { display: flex; align-items: center; gap: 10px; margin-bottom: 0.75rem; }
+  .footer-emblem {
+    width: 32px; height: 32px; border-radius: 9px;
+    background: linear-gradient(135deg, var(--teal-400), var(--teal-600));
+    display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;
+  }
+  .footer-emblem::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent 60%); }
+  .footer-emblem svg { width: 16px; height: 16px; position: relative; z-index: 1; }
+  .footer-wordmark { font-size: 1.1rem; font-weight: 800; color: var(--text-primary); }
+  .footer-wordmark .c { color: var(--teal-400); }
+  .footer-tagline { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; max-width: 280px; }
+  .footer-col-title { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal-400); margin-bottom: 0.75rem; font-weight: 700; }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+  .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.875rem; transition: color 0.2s; font-weight: 500; display: inline-flex; align-items: center; min-height: 32px; }
+  .footer-links a:hover { color: var(--teal-400); }
+  .footer-bottom { border-top: 1px solid var(--border-soft); padding-top: 1.5rem; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1rem; text-align: center; }
+  .footer-copy { font-size: 0.75rem; color: var(--text-muted); }
+  .footer-social { display: flex; gap: 0.6rem; }
+  .social-link {
+    width: 36px; height: 36px; border-radius: 9px; background: var(--dark-700);
+    border: 1px solid var(--border-soft); display: flex; align-items: center; justify-content: center;
+    font-size: 0.9rem; color: var(--text-muted); text-decoration: none;
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
+    min-height: 36px; min-width: 36px;
+  }
+  .social-link:hover { border-color: rgba(45,212,191,0.3); color: var(--teal-400); background: var(--dark-600); }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── KEN BURNS MOTION ── */
+  @keyframes kb-zoom-in {
+    0%   { transform: scale(1)    translateX(0%)    translateY(0%); }
+    100% { transform: scale(1.10) translateX(-2%)   translateY(-1.5%); }
+  }
+  @keyframes kb-zoom-out {
+    0%   { transform: scale(1.10) translateX(-2%)   translateY(-1.5%); }
+    100% { transform: scale(1)    translateX(0%)    translateY(0%); }
+  }
+  @keyframes kb-pan-right {
+    0%   { transform: scale(1.08) translateX(-3%)   translateY(0%); }
+    100% { transform: scale(1.08) translateX(1.5%)  translateY(-1%); }
+  }
+  @keyframes kb-pan-left {
+    0%   { transform: scale(1.08) translateX(1.5%)  translateY(-1%); }
+    100% { transform: scale(1.08) translateX(-3%)   translateY(0%); }
+  }
+  @keyframes kb-drift {
+    0%   { transform: scale(1.06) translateX(0%)    translateY(0%); }
+    33%  { transform: scale(1.10) translateX(-2%)   translateY(-1%); }
+    66%  { transform: scale(1.08) translateX(1%)    translateY(-2%); }
+    100% { transform: scale(1.06) translateX(0%)    translateY(0%); }
+  }
+
+  /* Apply motion to all slide image types */
+  .wellness-slide, .events-slide, .jet-slide, .chauffeur-slide,
+  .detailing-slide, .security-slide, .dining-slide, .yacht-events-slide,
+  .pkg-slide, .exp-card-img,
+  .heli-slide, .luxcar-slide, .jetski-slide, .jetcar-slide,
+  .dunebuggy-slide, .quadbike-slide, .flyboard-slide, .efoil-slide,
+  .jetpack-slide, .dolphins-slide, .donutride-slide, .waterski-slide,
+  .camelride-slide, .falconry-slide, .skypool-slide, .safari-slide,
+  .apartments-slide {
+    animation: kb-drift 12s ease-in-out infinite alternate;
+    will-change: transform;
+  }
+
+  /* Stagger animation variants so adjacent cards feel different */
+  .wellness-slide    { animation-name: kb-zoom-in;   animation-duration: 10s; }
+  .events-slide      { animation-name: kb-pan-right;  animation-duration: 9s; }
+  .jet-slide         { animation-name: kb-zoom-out;   animation-duration: 11s; }
+  .chauffeur-slide   { animation-name: kb-pan-left;   animation-duration: 12s; }
+  .detailing-slide   { animation-name: kb-drift;      animation-duration: 10s; }
+  .security-slide    { animation-name: kb-zoom-in;    animation-duration: 11s; }
+  .dining-slide      { animation-name: kb-pan-right;  animation-duration: 9.5s; }
+  .yacht-events-slide{ animation-name: kb-zoom-out;   animation-duration: 10.5s; }
+  .pkg-slide         { animation-name: kb-drift;      animation-duration: 11s; }
+  .exp-card-img      { animation-name: kb-zoom-in;    animation-duration: 10s; }
+
+  /* Pause motion on invisible slides to save resources */
+  .wellness-slide[style*="opacity: 0"],
+  .events-slide[style*="opacity: 0"],
+  .jet-slide[style*="opacity: 0"],
+  .chauffeur-slide[style*="opacity: 0"],
+  .detailing-slide[style*="opacity: 0"],
+  .security-slide[style*="opacity: 0"],
+  .dining-slide[style*="opacity: 0"],
+  .yacht-events-slide[style*="opacity: 0"],
+  .pkg-slide[style*="opacity: 0"] {
+    animation-play-state: paused;
+  }
+
+  /* ── CURSOR ── */
+  #cursor-outer, #cursor-inner { display: none; }
+
+  /* ── RESPONSIVE ── */
+  @media (min-width: 480px) {
+    .stats-grid { grid-template-columns: repeat(4, 1fr); }
+    .trust-items { flex-direction: row; justify-content: center; flex-wrap: wrap; gap: 1.5rem; }
+  }
+
+  @media (min-width: 640px) {
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+    .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.8rem; font-weight: 500; transition: color 0.2s; display: flex; align-items: center; min-height: 32px; }
+    .nav-links a:hover { color: var(--teal-400); }
+    .mobile-menu-btn { display: none; }
+    section { padding: 4.5rem 2.5rem; }
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .packages-grid { grid-template-columns: repeat(2, 1fr); }
+    .exp-grid { grid-template-columns: repeat(3, 1fr); }
+    .steps-grid { grid-template-columns: repeat(2, 1fr); }
+    .testimonial-section { flex-direction: row; }
+    .testimonial-visual { flex: 1; min-height: 380px; order: 0; }
+    .testimonial-content { flex: 1; padding: 3rem; }
+    .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
+    .footer-bottom { flex-direction: row; justify-content: space-between; }
+  }
+
+  @media (min-width: 1024px) {
+    nav { padding: 1.2rem 4rem; }
+    .hero { padding: 9rem 4rem 6rem; }
+    .hero-glow { width: 500px; height: 500px; }
+    section { padding: 6rem 4rem; }
+    .services-grid { grid-template-columns: repeat(3, 1fr); }
+    .packages-grid { grid-template-columns: repeat(2, 1fr); }
+    .exp-grid { grid-template-columns: repeat(4, 1fr); }
+    .steps-grid { grid-template-columns: repeat(4, 1fr); }
+    .testimonial-visual { flex: 0 0 50%; min-height: 450px; }
+    .testimonial-content { padding: 5rem 4rem; }
+    footer { padding: 4rem 4rem 2rem; }
+
+    @media (hover: hover) and (pointer: fine) {
+      * { cursor: none !important; }
+      #cursor-outer {
+        display: block; position: fixed; top: 0; left: 0;
+        width: 36px; height: 36px; border: 2.5px solid var(--teal-400);
+        border-radius: 50%; pointer-events: none; z-index: 99999;
+        transform: translate(-50%,-50%);
+        transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease, background 0.15s ease;
+        will-change: transform;
+      }
+      #cursor-inner {
+        display: block; position: fixed; top: 0; left: 0;
+        width: 7px; height: 7px; background: var(--teal-400);
+        border-radius: 50%; pointer-events: none; z-index: 100000;
+        transform: translate(-50%,-50%);
+        transition: width 0.15s ease, height 0.15s ease, background 0.15s ease;
+        will-change: transform;
+      }
+      body.cursor-hover #cursor-outer { width: 56px; height: 56px; background: rgba(45,212,191,0.10); box-shadow: 0 0 18px rgba(45,212,191,0.25); }
+      body.cursor-click #cursor-inner { width: 14px; height: 14px; background: var(--teal-500); }
+      body.cursor-click #cursor-outer { width: 28px; height: 28px; background: rgba(45,212,191,0.18); }
+    }
+  }
+
+  /* ── WELLNESS SLIDESHOW ── */
+  #wellness-card { position: relative; }
+  .wellness-slide {
+    transition: opacity 1.4s ease;
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .wellness-dots {
+    position: absolute; bottom: 0.6rem; right: 0.7rem;
+    display: flex; gap: 5px; z-index: 4;
+  }
+  .wellness-dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: rgba(255,255,255,0.35);
+    transition: background 0.3s;
+  }
+  .wellness-dot.active { background: var(--teal-400); }
+
+  #events-card { position: relative; }
+  .events-slide {
+    transition: opacity 1.4s ease;
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .events-dots {
+    position: absolute; bottom: 0.6rem; right: 0.7rem;
+    display: flex; gap: 5px; z-index: 4;
+  }
+  .events-dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: rgba(255,255,255,0.35);
+    transition: background 0.3s;
+  }
+  .events-dot.active { background: var(--teal-400); }
+
+  #jet-card { position: relative; }
+  .jet-slide {
+    transition: opacity 1.4s ease;
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .jet-dots {
+    position: absolute; bottom: 0.6rem; right: 0.7rem;
+    display: flex; gap: 5px; z-index: 4;
+  }
+  .jet-dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: rgba(255,255,255,0.35);
+    transition: background 0.3s;
+  }
+  .jet-dot.active { background: var(--teal-400); }
+
+  #chauffeur-card { position: relative; }
+  .chauffeur-slide {
+    transition: opacity 1.4s ease;
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .chauffeur-dots {
+    position: absolute; bottom: 0.6rem; right: 0.7rem;
+    display: flex; gap: 5px; z-index: 4;
+  }
+  .chauffeur-dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: rgba(255,255,255,0.35);
+    transition: background 0.3s;
+  }
+  .chauffeur-dot.active { background: var(--teal-400); }
+
+  #detailing-card { position: relative; }
+  .detailing-slide {
+    transition: opacity 1.4s ease;
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .detailing-dots {
+    position: absolute; bottom: 0.6rem; right: 0.7rem;
+    display: flex; gap: 5px; z-index: 4;
+  }
+  .detailing-dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: rgba(255,255,255,0.35);
+    transition: background 0.3s;
+  }
+  .detailing-dot.active { background: var(--teal-400); }
+
+  #security-card { position: relative; }
+  .security-slide {
+    transition: opacity 1.4s ease;
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .security-dots {
+    position: absolute; bottom: 0.6rem; right: 0.7rem;
+    display: flex; gap: 5px; z-index: 4;
+  }
+  .security-dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: rgba(255,255,255,0.35);
+    transition: background 0.3s;
+  }
+  .security-dot.active { background: var(--teal-400); }
+
+  #dining-card { position: relative; }
+  .dining-slide {
+    transition: opacity 1.4s ease;
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .dining-dots {
+    position: absolute; bottom: 0.6rem; right: 0.7rem;
+    display: flex; gap: 5px; z-index: 4;
+  }
+  .dining-dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: rgba(255,255,255,0.35);
+    transition: background 0.3s;
+  }
+  .dining-dot.active { background: var(--teal-400); }
+
+  #yacht-events-card { position: relative; }
+  .yacht-events-slide {
+    transition: opacity 1.4s ease;
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .yacht-events-dots {
+    position: absolute; bottom: 0.6rem; right: 0.7rem;
+    display: flex; gap: 5px; z-index: 4;
+  }
+  .yacht-events-dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: rgba(255,255,255,0.35);
+    transition: background 0.3s;
+  }
+  .yacht-events-dot.active { background: var(--teal-400); }
+
+  .icon-ticker {
+    position: fixed;
+    top: 65px; left: 0; right: 0;
+    z-index: 99;
+    background: rgba(6,6,10,0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(45,212,191,0.12);
+    overflow: hidden;
+    height: 46px;
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-ticker::before,
+  .icon-ticker::after {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 60px;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .icon-ticker::before {
+    left: 0;
+    background: linear-gradient(90deg, rgba(6,6,10,0.95), transparent);
+  }
+  .icon-ticker::after {
+    right: 0;
+    background: linear-gradient(270deg, rgba(6,6,10,0.95), transparent);
+  }
+
+  .ticker-track {
+    display: flex;
+    gap: 0;
+    animation: tickerScroll 30s linear infinite;
+    will-change: transform;
+    white-space: nowrap;
+  }
+
+  .ticker-track:hover { animation-play-state: paused; }
+
+  @keyframes tickerScroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .ticker-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 0 1.6rem;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    transition: color 0.2s;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  .ticker-item + .ticker-item::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 50%;
+    transform: translateY(-50%);
+    width: 3px; height: 3px;
+    border-radius: 50%;
+    background: rgba(45,212,191,0.3);
+  }
+
+  .ticker-icon {
+    width: 22px; height: 22px;
+    border-radius: 6px;
+    background: rgba(45,212,191,0.08);
+    border: 1px solid rgba(45,212,191,0.15);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    color: var(--teal-400);
+    flex-shrink: 0;
+    transition: background 0.2s, border-color 0.2s, transform 0.2s;
+  }
+
+  .ticker-item:hover { color: var(--teal-400); }
+  .ticker-item:hover .ticker-icon {
+    background: rgba(45,212,191,0.18);
+    border-color: rgba(45,212,191,0.4);
+    transform: scale(1.15);
+  }
+
+  /* Push hero down to account for ticker */
+  .hero { padding-top: 8.5rem !important; }
+
+  @media (min-width: 640px) {
+    .icon-ticker { top: 68px; height: 42px; }
+    .hero { padding-top: 10.5rem !important; }
+  }
+
+  @media (min-width: 1024px) {
+    .icon-ticker { top: 72px; height: 42px; }
+    .hero { padding-top: 11rem !important; }
+  }
+
+  @media (min-width: 1280px) {
+    nav { padding: 1.2rem 5rem; }
+    section { padding: 7rem 5rem; }
+    footer { padding: 5rem 5rem 2.5rem; }
+    .hero { padding: 10rem 5rem 7rem; }
+    .packages-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  
+  /* Performance: defer paint of off-screen sections */
+  .services-section, .packages-section, .bespoke-section,
+  .how-section, .testimonial-section, .trust-bar, footer {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 600px;
+  }
+  /* GPU compositing for slideshow images */
+  .wellness-slide, .events-slide, .jet-slide, .chauffeur-slide,
+  .detailing-slide, .security-slide, .dining-slide, .yacht-events-slide,
+  .pkg-slide, .exp-card-img { will-change: opacity; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  }
+
+  @media (hover: none) {
+    .service-card:hover, .pkg-card:hover, .exp-card:hover, .btn-primary:hover { transform: none; }
+  }
+
+  /* FEATURED WIDE CARD */
+  @media (min-width: 1024px) {
+    .pkg-card.wide { grid-column: span 2; }
+    .pkg-card.wide .pkg-img { height: 280px; }
+    .pkg-card.wide .pkg-body { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+    .pkg-card.wide .pkg-cta-wrap { display: flex; flex-direction: column; justify-content: flex-end; }
+  }
+
+  /* ── HERO VIDEO BACKGROUND ── */
+  .hero-video-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.85;
+  }
+
+  .hero-video-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+      linear-gradient(to bottom, rgba(6,6,10,0.35) 0%, rgba(6,6,10,0.1) 40%, rgba(6,6,10,0.45) 100%);
+    pointer-events: none;
+  }
+
+  /* Make sure hero content stays above video */
+  .hero-grid { z-index: 0; }
+  .hero-content { z-index: 2; }
+
+
+  /* ══════════════════════════════════════
+     MOBILE RESPONSIVE OVERHAUL
+  ══════════════════════════════════════ */
+
+  /* Base mobile (< 480px) */
+  @media (max-width: 479px) {
+
+    /* Hero video */
+    .hero-video-bg {
+      object-fit: cover;
+      object-position: center center;
+      opacity: 0.75;
+    }
+
+    /* Hero text tighter */
+    .hero {
+      padding-left: 1.2rem !important;
+      padding-right: 1.2rem !important;
+      min-height: 85vh;
+    }
+
+    h1 { font-size: clamp(1.9rem, 9vw, 2.4rem); letter-spacing: -0.5px; }
+
+    .hero-sub {
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+
+    .hero-actions {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.65rem;
+    }
+
+    .btn-primary, .btn-ghost {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      font-size: 0.82rem;
+      padding: 0.9rem 1rem;
+    }
+
+    /* Hero badge */
+    .hero-badge { margin-bottom: 1rem; }
+    .hero-badge-label { font-size: 0.62rem; }
+
+    /* Ticker smaller */
+    .icon-ticker { height: 38px; }
+    .ticker-item { font-size: 0.6rem; padding: 0 1rem; gap: 5px; }
+    .ticker-icon { width: 18px; height: 18px; font-size: 0.55rem; }
+
+    /* Stats 2-col on tiny screens */
+    .stats-section { padding: 2rem 1.2rem; }
+    .stats-grid { grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+    .stat-number { font-size: 1.8rem; }
+
+    /* Sections padding */
+    section { padding: 2.5rem 1.2rem; }
+
+    /* Services single col */
+    .services-grid { grid-template-columns: 1fr; gap: 0.85rem; }
+    .service-card { padding: 1.25rem; }
+
+    /* Packages single col */
+    .packages-grid { grid-template-columns: 1fr; gap: 1rem; }
+    .pkg-img-placeholder { height: 160px; }
+    .pkg-body { padding: 1.25rem 1.25rem 1.15rem; }
+    .pkg-name { font-size: 1.1rem; line-height: 1.2; word-break: break-word; }
+    .pkg-desc { font-size: 0.8rem; }
+    .pkg-perks li { font-size: 0.75rem; }
+
+    /* Bespoke exp-grid single col on tiny */
+    .exp-grid { grid-template-columns: 1fr; gap: 0.65rem; }
+    .exp-card { min-height: 150px; }
+    .exp-name { font-size: 0.85rem; }
+    .exp-loc { font-size: 0.65rem; color: var(--teal-400) !important; }
+
+    /* Steps single col */
+    .steps-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+
+    /* Testimonial stack */
+    .testimonial-section { flex-direction: column; }
+    .testimonial-visual { min-height: 140px; order: -1; }
+    .testimonial-content { padding: 1.75rem 1.2rem; }
+    .quote-text { font-size: 0.95rem; }
+
+    /* Trust bar */
+    .trust-bar { padding: 1.25rem 1.2rem; }
+    .trust-items { flex-direction: column; gap: 0.75rem; align-items: flex-start; }
+    .trust-item { font-size: 0.72rem; }
+
+    /* Footer */
+    footer { padding: 2rem 1.2rem 1.25rem; }
+    .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .footer-bottom { flex-direction: column; gap: 0.75rem; text-align: center; }
+
+    /* Section headings */
+    h2 { font-size: clamp(1.4rem, 6vw, 1.9rem); }
+    .section-intro { font-size: 0.88rem; margin-bottom: 1.75rem; }
+  }
+
+  /* Small mobile (480–639px) */
+  @media (min-width: 480px) and (max-width: 639px) {
+
+    .hero-video-bg { object-fit: cover; opacity: 0.8; }
+
+    h1 { font-size: clamp(2rem, 7vw, 2.8rem); }
+
+    .hero-actions { flex-wrap: wrap; gap: 0.65rem; }
+
+    /* Exp grid 2-col */
+    .exp-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+    .exp-card { min-height: 160px; }
+
+    /* Packages 1-col */
+    .packages-grid { grid-template-columns: 1fr; }
+
+    /* Services 2-col */
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+
+    footer { padding: 2.25rem 1.5rem 1.25rem; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  }
+
+  /* Tablet (640–1023px) — enhance existing breakpoint */
+  @media (min-width: 640px) and (max-width: 1023px) {
+
+    .hero-video-bg { object-fit: cover; opacity: 0.82; }
+
+    .exp-grid { grid-template-columns: repeat(3, 1fr); }
+    .exp-card { min-height: 175px; }
+
+    .packages-grid { grid-template-columns: repeat(2, 1fr); }
+    .pkg-card.wide { grid-column: span 2; }
+
+    .hero { padding-left: 2.5rem !important; padding-right: 2.5rem !important; }
+  }
+
+  /* Desktop video opacity */
+  @media (min-width: 1024px) {
+    .hero-video-bg { object-fit: cover; opacity: 0.85; }
+    .exp-card { min-height: 200px; }
+  }
+
+  /* ── APP DOWNLOAD SECTION ── */
+  .app-section {
+    background: var(--dark-900);
+    border-top: 1px solid var(--border-soft);
+    border-bottom: 1px solid var(--border-soft);
+    padding: 4rem 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .app-section::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 50% 50%, rgba(45,212,191,0.05) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  .app-section-label {
+    font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--teal-400); font-weight: 700;
+    display: flex; align-items: center; justify-content: center; gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .app-section-label::before,
+  .app-section-label::after {
+    content: ''; display: block; width: 28px; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--teal-400));
+    border-radius: 2px;
+  }
+  .app-section-label::after {
+    background: linear-gradient(90deg, var(--teal-400), transparent);
+  }
+
+  .app-section h2 {
+    font-size: clamp(1.8rem, 5vw, 2.6rem); font-weight: 800;
+    letter-spacing: -0.6px; line-height: 1.1;
+    color: var(--text-primary); margin-bottom: 0.85rem;
+  }
+  .app-section h2 .c { color: var(--teal-400); }
+
+  .app-section-sub {
+    font-size: 0.95rem; color: var(--text-muted);
+    line-height: 1.7; max-width: 460px;
+    margin: 0 auto 2.25rem; font-weight: 400;
+  }
+
+  .app-store-btns {
+    display: flex; gap: 1rem;
+    justify-content: center; flex-wrap: wrap;
+  }
+
+  .app-store-btn {
+    display: flex; align-items: center; gap: 0.85rem;
+    background: var(--dark-700);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 14px;
+    padding: 0.85rem 1.5rem;
+    text-decoration: none; color: var(--text-primary);
+    transition: border-color 0.25s, background 0.25s, transform 0.2s, box-shadow 0.2s;
+    min-width: 180px;
+    position: relative; overflow: hidden;
+  }
+  .app-store-btn::before {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(45,212,191,0.04), transparent 60%);
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .app-store-btn:hover {
+    border-color: rgba(45,212,191,0.25);
+    background: var(--dark-600);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.35);
+  }
+  .app-store-btn:hover::before { opacity: 1; }
+
+  .app-store-btn-icon {
+    font-size: 1.5rem; color: var(--text-primary); flex-shrink: 0;
+    line-height: 1;
+  }
+  .app-store-btn-text { text-align: left; }
+  .app-store-btn-soon {
+    font-size: 0.52rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--teal-400); font-weight: 700; display: block; margin-bottom: 2px;
+  }
+  .app-store-btn-name {
+    font-size: 0.95rem; font-weight: 800; color: var(--text-primary);
+    display: block; letter-spacing: -0.2px;
+  }
+
+  @media (min-width: 640px) {
+    .app-section { padding: 5rem 2.5rem; }
+    .app-store-btn { min-width: 200px; }
+  }
+  @media (min-width: 1024px) {
+    .app-section { padding: 6rem 4rem; }
+  }
+  @media (max-width: 479px) {
+    .app-store-btns { flex-direction: column; align-items: center; }
+    .app-store-btn { width: 100%; max-width: 280px; justify-content: center; }
+  }
+</style>
+<link rel="preload" as="video" href="final_video.mp4" type="video/mp4">
+<link rel="preload" as="image" href="https://iili.io/C25NvRe.jpg">
+<link rel="preload" as="image" href="https://iili.io/C27EXB1.jpg">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=600&q=80&auto=format&fit=crop">
+</head>
+<body>
+
+<svg style="display:none">
+  <symbol id="diamond" viewBox="0 0 24 24" fill="none">
+    <polygon points="12,2 22,9 12,9" fill="rgba(6,6,10,0.22)"/>
+    <polygon points="12,2 2,9 12,9" fill="rgba(6,6,10,0.06)"/>
+    <polygon points="2,9 12,22 12,9" fill="rgba(0,0,0,0.28)"/>
+    <polygon points="22,9 12,22 12,9" fill="rgba(0,0,0,0.12)"/>
+    <polygon points="12,2 22,9 12,22 2,9" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="1.1" stroke-linejoin="round"/>
+    <line x1="2" y1="9" x2="22" y2="9" stroke="rgba(255,255,255,0.38)" stroke-width="0.8"/>
+    <line x1="12" y1="2" x2="12" y2="9" stroke="rgba(255,255,255,0.22)" stroke-width="0.7"/>
+  </symbol>
+</svg>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <div class="nav-emblem"><svg width="18" height="18"><use href="#diamond"/></svg></div>
+    <span class="nav-wordmark">S<span class="c">C</span>IERGE</span>
+  </a>
+
+
+
+  <div class="nav-search-wrap" id="navSearchWrap">
+    <input type="search" id="navSearchInput" class="nav-search-input" placeholder="Search experiences…" aria-label="Search">
+    <button class="nav-search-clear" id="navSearchClear" aria-label="Clear search">✕</button>
+  </div>
+
+  <div class="nav-right">
+    <button class="nav-search-btn" id="navSearchBtn" aria-label="Open search"><i class="fas fa-search"></i></button>
+    <a href="scierge_quote_updated (17).html" class="nav-cta"><i class="fas fa-gem"></i> Book Now</a>
+    <button class="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="nav-search-results" class="nav-search-results" style="display:none;"></div>
+
+<!-- ICON TICKER -->
+<div class="icon-ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack">
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-spa"></i></span>Wellness & Spa</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-ticket-alt"></i></span>VIP Tickets</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-plane"></i></span>Private Jet Charter</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-car"></i></span>Chauffeur Services</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-star"></i></span>Car Detailing</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-shield-alt"></i></span>Security</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-utensils"></i></span>Private Dining & Restaurant Booking</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-ship"></i></span>Private Events on Yachts & Cruises</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-helicopter"></i></span>Helicopter Tours</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-car-side"></i></span>Luxury Cars</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-water"></i></span>Jet Ski</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-bolt"></i></span>Jet Car</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-truck-monster"></i></span>Dune Buggy</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-motorcycle"></i></span>Quad Bikes</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-tint"></i></span>Flyboard</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-wind"></i></span>E-foil</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-rocket"></i></span>Jetpack</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-fish"></i></span>Swim with Dolphins</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-life-ring"></i></span>Donut Ride</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-skiing-nordic"></i></span>Waterski</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-paw"></i></span>Camel Ride</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-dove"></i></span>Falconry</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-swimming-pool"></i></span>Skypool Experience</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-home"></i></span>Apartments & Villas</span>
+    <!-- duplicate set for seamless loop -->
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-spa"></i></span>Wellness & Spa</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-ticket-alt"></i></span>VIP Tickets</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-plane"></i></span>Private Jet Charter</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-car"></i></span>Chauffeur Services</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-star"></i></span>Car Detailing</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-shield-alt"></i></span>Security</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-utensils"></i></span>Private Dining & Restaurant Booking</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-ship"></i></span>Private Events on Yachts & Cruises</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-helicopter"></i></span>Helicopter Tours</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-car-side"></i></span>Luxury Cars</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-water"></i></span>Jet Ski</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-bolt"></i></span>Jet Car</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-truck-monster"></i></span>Dune Buggy</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-motorcycle"></i></span>Quad Bikes</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-tint"></i></span>Flyboard</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-wind"></i></span>E-foil</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-rocket"></i></span>Jetpack</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-fish"></i></span>Swim with Dolphins</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-life-ring"></i></span>Donut Ride</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-skiing-nordic"></i></span>Waterski</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-paw"></i></span>Camel Ride</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-dove"></i></span>Falconry</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-swimming-pool"></i></span>Skypool Experience</span>
+    <span class="ticker-item"><span class="ticker-icon"><i class="fas fa-home"></i></span>Apartments & Villas</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <video class="hero-video-bg" autoplay muted loop playsinline preload="metadata">
+    <source src="final_video.mp4" type="video/mp4">
+  </video>
+  <div class="hero-video-overlay"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <div class="hero-badge-dot"></div>
+      <span class="hero-badge-label">Curated Experiences</span>
+    </div>
+    <h1>Your World, <em>Perfectly</em> Arranged</h1>
+    <p class="hero-sub">From private jets soaring over the Sahara to chauffeur-driven arrivals in London — SCIERGE orchestrates every detail so you simply arrive and enjoy.</p>
+    <div class="hero-actions">
+
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- BESPOKE EXPERIENCES -->
+<section class="bespoke-section" id="bespoke">
+  <p class="section-label">Bespoke Experiences</p>
+  <h2>Adventures <em>Beyond</em> the Ordinary</h2>
+  <p class="section-intro">Name the experience. SCIERGE arranges it — anywhere on Earth.</p>
+
+  <div class="exp-grid">
+    <div class="exp-card" id="wellness-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img wellness-slide" src="https://iili.io/C25NvRe.jpg" alt="Wellness & Spa" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img wellness-slide" src="https://iili.io/C2581Zg.jpg" alt="Wellness & Spa" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img wellness-slide" src="https://iili.io/C25Tgn4.jpg" alt="Wellness & Spa" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img wellness-slide" src="https://iili.io/C25I5dX.jpg" alt="Wellness & Spa" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🧖</span>
+        <div class="exp-name">Wellness & Spa</div>
+        <div class="exp-loc">Europe </div>
+      </div>
+      <div class="wellness-dots">
+        <span class="wellness-dot active"></span>
+        <span class="wellness-dot"></span>
+        <span class="wellness-dot"></span>
+        <span class="wellness-dot"></span>
+      </div>
+    </div>
+    <div class="exp-card" id="events-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img events-slide" src="https://iili.io/C27EXB1.jpg" alt="Event Passes" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img events-slide" src="https://iili.io/C27EN2a.jpg" alt="Event Passes" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img events-slide" src="https://iili.io/C27088v.jpg" alt="Event Passes" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img events-slide" src="https://iili.io/C270NMF.jpg" alt="Event Passes" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img events-slide" src="https://iili.io/C27GT8J.jpg" alt="Event Passes" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img events-slide" src="https://iili.io/C27GOP9.jpg" alt="Event Passes" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🎟️</span>
+        <div class="exp-name">VIP Tickets</div>
+        <div class="exp-loc">Worldwide</div>
+      </div>
+      <div class="events-dots">
+        <span class="events-dot active"></span>
+        <span class="events-dot"></span>
+        <span class="events-dot"></span>
+        <span class="events-dot"></span>
+        <span class="events-dot"></span>
+        <span class="events-dot"></span>
+      </div>
+    </div>
+    <div class="exp-card" id="jet-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img jet-slide" src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=600&q=80&auto=format&fit=crop" alt="Private Jet Charter" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img jet-slide" src="https://iili.io/C27ZJXR.jpg" alt="Private Jet Charter" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img jet-slide" src="https://iili.io/C27QnVV.jpg" alt="Private Jet Charter" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img jet-slide" src="https://iili.io/C27PZ9j.jpg" alt="Private Jet Charter" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">✈️</span>
+        <div class="exp-name">Private Jet Charter</div>
+        <div class="exp-loc">Worldwide</div>
+      </div>
+      <div class="jet-dots">
+        <span class="jet-dot active"></span>
+        <span class="jet-dot"></span>
+        <span class="jet-dot"></span>
+        <span class="jet-dot"></span>
+      </div>
+    </div>
+    <div class="exp-card" id="chauffeur-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img chauffeur-slide" src="https://iili.io/C2aV637.jpg" alt="Chauffeur Services" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img chauffeur-slide" src="https://iili.io/CfGuUrv.jpg" alt="Chauffeur Services" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img chauffeur-slide" src="https://iili.io/CfGAC3x.jpg" alt="Chauffeur Services" style="opacity:0;position:absolute;inset:0;">
+	        <img loading="lazy" decoding="async" class="exp-card-img chauffeur-slide" src="https://iili.io/CfG7icG.jpg" alt="Chauffeur Services" style="opacity:0;position:absolute;inset:0;">
+			    <img loading="lazy" decoding="async" class="exp-card-img chauffeur-slide" src="https://iili.io/CfGkA5Q.jpg" alt="Chauffeur Services" style="opacity:0;position:absolute;inset:0;">
+				    <img loading="lazy" decoding="async" class="exp-card-img chauffeur-slide" src="https://iili.io/CfGRdSR.jpg" alt="Chauffeur Services" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🚘</span>
+        <div class="exp-name">Chauffeur Services</div>
+        <div class="exp-loc">London</div>
+      </div>
+      <div class="chauffeur-dots">
+        <span class="chauffeur-dot active"></span>
+        <span class="chauffeur-dot"></span>
+        <span class="chauffeur-dot"></span>
+      </div>
+    </div>
+    <div class="exp-card" id="detailing-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img detailing-slide" src="https://iili.io/C2Wqv1a.jpg" alt="Car Detailing" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img detailing-slide" src="https://iili.io/C2Wf4Ve.jpg" alt="Car Detailing" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img detailing-slide" src="https://iili.io/C2Wf5oF.jpg" alt="Car Detailing" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img detailing-slide" src="https://iili.io/C2WKuBs.jpg" alt="Car Detailing" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img detailing-slide" src="https://iili.io/C2WFsLu.jpg" alt="Car Detailing" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img detailing-slide" src="https://iili.io/C2WFJff.jpg" alt="Car Detailing" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🚗</span>
+        <div class="exp-name">Car Detailing</div>
+        <div class="exp-loc">London</div>
+      </div>
+      <div class="detailing-dots">
+        <span class="detailing-dot active"></span>
+        <span class="detailing-dot"></span>
+        <span class="detailing-dot"></span>
+        <span class="detailing-dot"></span>
+        <span class="detailing-dot"></span>
+        <span class="detailing-dot"></span>
+      </div>
+    </div>
+    <div class="exp-card" id="security-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img security-slide" src="https://iili.io/C2WAVGp.jpg" alt="Security" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img security-slide" src="https://iili.io/C2Wuihv.jpg" alt="Security" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img security-slide" src="https://iili.io/C2Wu8rP.jpg" alt="Security" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🛡️</span>
+        <div class="exp-name">Security/ Close protection</div>
+        <div class="exp-loc">Worldwide</div>
+      </div>
+      <div class="security-dots">
+        <span class="security-dot active"></span>
+        <span class="security-dot"></span>
+        <span class="security-dot"></span>
+      </div>
+    </div>
+    <div class="exp-card" id="dining-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img dining-slide" src="https://iili.io/C2W0fkB.jpg" alt="Private Dining" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img dining-slide" src="https://iili.io/C2WcIZg.jpg" alt="Private Dining" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img dining-slide" src="https://iili.io/C2WYLgV.jpg" alt="Private Dining" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🍽️</span>
+        <div class="exp-name">Private Dining & Restaurant Booking</div>
+        <div class="exp-loc">Dubai · Monaco  · Paris · Italy</div>
+      </div>
+      <div class="dining-dots">
+        <span class="dining-dot active"></span>
+        <span class="dining-dot"></span>
+        <span class="dining-dot"></span>
+      </div>
+    </div>
+    <div class="exp-card" id="yacht-events-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img yacht-events-slide" src="https://iili.io/C2WvRaI.jpg" alt="Private Events on Yachts & Cruises" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img yacht-events-slide" src="https://iili.io/C2WkId7.jpg" alt="Private Events on Yachts & Cruises" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img yacht-events-slide" src="https://iili.io/C2WeQOg.jpg" alt="Private Events on Yachts & Cruises" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img yacht-events-slide" src="https://iili.io/C2WeOJ9.jpg" alt="Private Events on Yachts & Cruises" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img yacht-events-slide" src="https://iili.io/C2WeEDG.jpg" alt="Private Events on Yachts & Cruises" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🛥️</span>
+        <div class="exp-name">Private Events on Yachts & Cruises</div>
+        <div class="exp-loc">London·Ibiza· Dubai</div>
+      </div>
+      <div class="yacht-events-dots">
+        <span class="yacht-events-dot active"></span>
+        <span class="yacht-events-dot"></span>
+        <span class="yacht-events-dot"></span>
+        <span class="yacht-events-dot"></span>
+        <span class="yacht-events-dot"></span>
+      </div>
+    </div>
+
+    <!-- Helicopter Tours -->
+    <div class="exp-card" id="heli-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img heli-slide" src="https://iili.io/C3IPt7n.jpg" alt="Helicopter Tours" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img heli-slide" src="https://iili.io/C3IiEEN.jpg" alt="Helicopter Tours" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img heli-slide" src="https://iili.io/C3Iirve.jpg" alt="Helicopter Tours" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🚁</span>
+        <div class="exp-name">Helicopter Tours</div>
+        <div class="exp-loc">Dubai</div>
+      </div>
+      <div style="position:absolute;bottom:0.6rem;right:0.7rem;display:flex;gap:5px;z-index:4;">
+        <div class="heli-dot active" style="width:5px;height:5px;border-radius:50%;background:var(--teal-400);transition:background 0.3s;"></div>
+        <div class="heli-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="heli-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+      </div>
+    </div>
+
+    <!-- Luxury Cars -->
+    <div class="exp-card" id="luxcars-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img luxcar-slide" src="https://iili.io/C3T3dtp.jpg" alt="Luxury Cars" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img luxcar-slide" src="https://iili.io/C3T3AVS.jpg" alt="Luxury Cars" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img luxcar-slide" src="https://iili.io/C3TFT7a.jpg" alt="Luxury Cars" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img luxcar-slide" src="https://iili.io/C3TFG7s.jpg" alt="Luxury Cars" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img luxcar-slide" src="https://iili.io/C3TFUpj.jpg" alt="Luxury Cars" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img luxcar-slide" src="https://iili.io/C3TKfvs.jpg" alt="Luxury Cars" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🏎️</span>
+        <div class="exp-name">Luxury Cars</div>
+        <div class="exp-loc">Dubai·London</div>
+      </div>
+      <div style="position:absolute;bottom:0.6rem;right:0.7rem;display:flex;gap:5px;z-index:4;">
+        <div class="luxcar-dot active" style="width:5px;height:5px;border-radius:50%;background:var(--teal-400);transition:background 0.3s;"></div>
+        <div class="luxcar-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="luxcar-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="luxcar-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="luxcar-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="luxcar-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+      </div>
+    </div>
+
+    <!-- Jet Ski -->
+    <div class="exp-card" id="jetski-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img jetski-slide" src="https://iili.io/C3TTDI1.jpg" alt="Jet Ski" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img jetski-slide" src="https://iili.io/C3TufIt.jpg" alt="Jet Ski" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img jetski-slide" src="https://iili.io/C3TuOGa.jpg" alt="Jet Ski" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img jetski-slide" src="https://iili.io/C3TuD8l.jpg" alt="Jet Ski" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img jetski-slide" src="https://iili.io/C3TAnwP.jpg" alt="Jet Ski" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🌊</span>
+        <div class="exp-name">Jet Ski</div>
+        <div class="exp-loc">Dubai · UAE· Saudi Arabia· Qatar· USA· Mexico· Spain· Greece· Croatia· Turkey· Thailand· Maldives</div>
+      </div>
+      <div style="position:absolute;bottom:0.6rem;right:0.7rem;display:flex;gap:5px;z-index:4;">
+        <div class="jetski-dot active" style="width:5px;height:5px;border-radius:50%;background:var(--teal-400);transition:background 0.3s;"></div>
+        <div class="jetski-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="jetski-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="jetski-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="jetski-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+      </div>
+    </div>
+
+    <!-- Jet Car -->
+    <div class="exp-card" id="jetcar-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img jetcar-slide" src="https://iili.io/C3TOTcx.png" alt="Jet Car" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img jetcar-slide" src="https://iili.io/C3TOrR2.jpg" alt="Jet Car" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img jetcar-slide" src="https://iili.io/C3Te1z7.png" alt="Jet Car" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img jetcar-slide" src="https://iili.io/C3Tk0Yv.jpg" alt="Jet Car" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img jetcar-slide" src="https://iili.io/C3T8P7j.png" alt="Jet Car" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🚀</span>
+        <div class="exp-name">Jet Car</div>
+        <div class="exp-loc">UAE· Saudi Arabia· Qatar</div>
+      </div>
+      <div style="position:absolute;bottom:0.6rem;right:0.7rem;display:flex;gap:5px;z-index:4;">
+        <div class="jetcar-dot active" style="width:5px;height:5px;border-radius:50%;background:var(--teal-400);transition:background 0.3s;"></div>
+        <div class="jetcar-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="jetcar-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="jetcar-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="jetcar-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+      </div>
+    </div>
+
+    <!-- Dune Buggy -->
+    <div class="exp-card" id="dunebuggy-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img dunebuggy-slide" src="https://iili.io/C3TQRHP.jpg" alt="Dune Buggy" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img dunebuggy-slide" src="https://iili.io/C3TQhOX.jpg" alt="Dune Buggy" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img dunebuggy-slide" src="https://iili.io/C3TQesf.jpg" alt="Dune Buggy" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img dunebuggy-slide" src="https://iili.io/C3TQgJS.jpg" alt="Dune Buggy" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🏜️</span>
+        <div class="exp-name">Dune Buggy</div>
+        <div class="exp-loc">UAE· Saudi Arabia· Qatar·Morocco· Egypt· Jordan </div>
+      </div>
+      <div style="position:absolute;bottom:0.6rem;right:0.7rem;display:flex;gap:5px;z-index:4;">
+        <div class="dunebuggy-dot active" style="width:5px;height:5px;border-radius:50%;background:var(--teal-400);transition:background 0.3s;"></div>
+        <div class="dunebuggy-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="dunebuggy-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="dunebuggy-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+      </div>
+    </div>
+
+    <!-- Quad Bikes -->
+    <div class="exp-card" id="quadbikes-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img quadbike-slide" src="https://iili.io/C3uJGQS.jpg" alt="Quad Bikes" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img quadbike-slide" src="https://iili.io/C3uJbnI.jpg" alt="Quad Bikes" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img quadbike-slide" src="https://iili.io/C3udKt2.jpg" alt="Quad Bikes" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img quadbike-slide" src="https://iili.io/C3udGHJ.jpg" alt="Quad Bikes" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🏍️</span>
+        <div class="exp-name">Quad Bikes</div>
+        <div class="exp-loc">UAE· Saudi Arabia· Qatar· Morocco· Egypt· Jordan· Turkey</div>
+      </div>
+      <div style="position:absolute;bottom:0.6rem;right:0.7rem;display:flex;gap:5px;z-index:4;">
+        <div class="quadbike-dot active" style="width:5px;height:5px;border-radius:50%;background:var(--teal-400);transition:background 0.3s;"></div>
+        <div class="quadbike-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="quadbike-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="quadbike-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+      </div>
+    </div>
+
+    <!-- Flyboard -->
+    <div class="exp-card" id="flyboard-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img flyboard-slide" src="https://iili.io/C3uTwcx.jpg" alt="Flyboard" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img flyboard-slide" src="https://iili.io/C3uT6KJ.jpg" alt="Flyboard" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img flyboard-slide" src="https://iili.io/C3uTboX.jpg" alt="Flyboard" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img flyboard-slide" src="https://iili.io/C3uuzUx.jpg" alt="Flyboard" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">💦</span>
+        <div class="exp-name">Flyboard</div>
+        <div class="exp-loc">UAE· Saudi Arabia· Qatar· France· Spain· Greece· Turkey· Thailand· USA· Mexico</div>
+      </div>
+      <div style="position:absolute;bottom:0.6rem;right:0.7rem;display:flex;gap:5px;z-index:4;">
+        <div class="flyboard-dot active" style="width:5px;height:5px;border-radius:50%;background:var(--teal-400);transition:background 0.3s;"></div>
+        <div class="flyboard-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="flyboard-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="flyboard-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+      </div>
+    </div>
+
+    <!-- E-foil -->
+    <div class="exp-card" id="efoil-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img efoil-slide" src="https://iili.io/C3uwpcv.png" alt="E-foil" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img efoil-slide" src="https://iili.io/C3ueGMF.jpg" alt="E-foil" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img efoil-slide" src="https://iili.io/C3ukVxS.png" alt="E-foil" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img efoil-slide" src="https://iili.io/C3uvhIp.jpg" alt="E-foil" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🏄</span>
+        <div class="exp-name">E-foil</div>
+        <div class="exp-loc">UAE· Saudi Arabia· Qatar· USA· France· Spain· Italy· Greece· Croatia· Australia· Maldives</div>
+      </div>
+      <div style="position:absolute;bottom:0.6rem;right:0.7rem;display:flex;gap:5px;z-index:4;">
+        <div class="efoil-dot active" style="width:5px;height:5px;border-radius:50%;background:var(--teal-400);transition:background 0.3s;"></div>
+        <div class="efoil-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="efoil-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="efoil-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+      </div>
+    </div>
+
+    <!-- Jetpack -->
+    <div class="exp-card" id="jetpack-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img jetpack-slide" src="https://iili.io/C3AI4RV.png" alt="Jetpack" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img jetpack-slide" src="https://iili.io/C3AID0J.jpg" alt="Jetpack" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img jetpack-slide" src="https://iili.io/C3ATf0G.jpg" alt="Jetpack" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img jetpack-slide" src="https://iili.io/C3ATgBn.png" alt="Jetpack" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🚀</span>
+        <div class="exp-name">Jetpack</div>
+        <div class="exp-loc">UAE· Saudi Arabia· Qatar· USA· France· Spain· Mexico· Thailand </div>
+      </div>
+      <div style="position:absolute;bottom:0.6rem;right:0.7rem;display:flex;gap:5px;z-index:4;">
+        <div class="jetpack-dot active" style="width:5px;height:5px;border-radius:50%;background:var(--teal-400);transition:background 0.3s;"></div>
+        <div class="jetpack-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="jetpack-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="jetpack-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+      </div>
+    </div>
+
+    <!-- Swim with Dolphins -->
+    <div class="exp-card" id="dolphins-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img dolphins-slide" src="https://iili.io/C3AvPWB.jpg" alt="Swim with Dolphins" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img dolphins-slide" src="https://iili.io/C3A89xp.jpg" alt="Swim with Dolphins" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img dolphins-slide" src="https://iili.io/C3A8Tq7.jpg" alt="Swim with Dolphins" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img dolphins-slide" src="https://iili.io/C3A8lzQ.jpg" alt="Swim with Dolphins" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🐬</span>
+        <div class="exp-name">Swim with Dolphins</div>
+        <div class="exp-loc"> UAE· Bahamas· Mexico· Dominican Republic· USA· Maldives· Turkey </div>
+      </div>
+      <div style="position:absolute;bottom:0.6rem;right:0.7rem;display:flex;gap:5px;z-index:4;">
+        <div class="dolphins-dot active" style="width:5px;height:5px;border-radius:50%;background:var(--teal-400);transition:background 0.3s;"></div>
+        <div class="dolphins-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="dolphins-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="dolphins-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+      </div>
+    </div>
+
+    <!-- Donut Ride -->
+    <div class="exp-card" id="donutride-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img donutride-slide" src="https://iili.io/C3A6ArB.png" alt="Donut Ride" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img donutride-slide" src="https://iili.io/C3A62ql.png" alt="Donut Ride" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img donutride-slide" src="https://iili.io/C3A4SJ1.jpg" alt="Donut Ride" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img donutride-slide" src="https://iili.io/C3A6lIa.jpg" alt="Donut Ride" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🍩</span>
+        <div class="exp-name">Donut Ride</div>
+        <div class="exp-loc">UAE· Saudi Arabia· USA· France· Spain· Italy· Greece· Croatia· Turkey·Thailand· Australiai </div>
+      </div>
+      <div style="position:absolute;bottom:0.6rem;right:0.7rem;display:flex;gap:5px;z-index:4;">
+        <div class="donutride-dot active" style="width:5px;height:5px;border-radius:50%;background:var(--teal-400);transition:background 0.3s;"></div>
+        <div class="donutride-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="donutride-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="donutride-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+      </div>
+    </div>
+
+    <!-- Waterski -->
+    <div class="exp-card" id="waterski-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img waterski-slide" src="https://iili.io/C3Ayf2a.webp" alt="Waterski" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img waterski-slide" src="https://iili.io/C3Aywyx.webp" alt="Waterski" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img waterski-slide" src="https://iili.io/C3R998G.webp" alt="Waterski" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img waterski-slide" src="https://iili.io/C3R95MP.jpg" alt="Waterski" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🎿</span>
+        <div class="exp-name">Waterski</div>
+        <div class="exp-loc">UAE· Saudi Arabia· USA, France· Spain · Italy· Greece· Croatia· Turkey·Thailand· Australiai</div>
+      </div>
+      <div style="position:absolute;bottom:0.6rem;right:0.7rem;display:flex;gap:5px;z-index:4;">
+        <div class="waterski-dot active" style="width:5px;height:5px;border-radius:50%;background:var(--teal-400);transition:background 0.3s;"></div>
+        <div class="waterski-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="waterski-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="waterski-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+      </div>
+    </div>
+
+
+    <!-- Camel Ride -->
+    <div class="exp-card" id="camelride-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img camelride-slide" src="https://iili.io/C3RA0Bt.jpg" alt="Camel Ride" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img camelride-slide" src="https://iili.io/C3RAWvf.jpg" alt="Camel Ride" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img camelride-slide" src="https://iili.io/C3RAeC7.jpg" alt="Camel Ride" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img camelride-slide" src="https://iili.io/C3RA6TQ.jpg" alt="Camel Ride" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🐪</span>
+        <div class="exp-name">Camel Ride</div>
+        <div class="exp-loc">UAE· Saudi Arabia· Morocco· Egypt· Jordan· Qatar </div>
+      </div>
+      <div style="position:absolute;bottom:0.6rem;right:0.7rem;display:flex;gap:5px;z-index:4;">
+        <div class="camelride-dot active" style="width:5px;height:5px;border-radius:50%;background:var(--teal-400);transition:background 0.3s;"></div>
+        <div class="camelride-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="camelride-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="camelride-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+      </div>
+    </div>
+
+
+    <!-- Falconry -->
+    <!-- Falconry -->
+    <div class="exp-card" id="falconry-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img falconry-slide" src="https://iili.io/C3RWPBs.jpg" alt="Falconry" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img falconry-slide" src="https://iili.io/C3RXHCu.jpg" alt="Falconry" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img falconry-slide" src="https://iili.io/C3RXu3v.jpg" alt="Falconry" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img falconry-slide" src="https://iili.io/C3RXE6G.jpg" alt="Falconry" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🦅</span>
+        <div class="exp-name">Falconry</div>
+        <div class="exp-loc">UAE· Saudi Arabia· Qatar</div>
+      </div>
+      <div style="position:absolute;bottom:0.6rem;right:0.7rem;display:flex;gap:5px;z-index:4;">
+        <div class="falconry-dot active" style="width:5px;height:5px;border-radius:50%;background:var(--teal-400);transition:background 0.3s;"></div>
+        <div class="falconry-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="falconry-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="falconry-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+      </div>
+    </div>
+
+    <!-- Skypool Experience -->
+    <div class="exp-card" id="skypool-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img skypool-slide" src="https://iili.io/C3RUO4S.jpg" alt="Skypool Experience" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img skypool-slide" src="https://iili.io/C3RUt8F.jpg" alt="Skypool Experience" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img skypool-slide" src="https://iili.io/C3RgVcP.jpg" alt="Skypool Experience" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img skypool-slide" src="https://iili.io/C3Rg4HX.jpg" alt="Skypool Experience" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🏊</span>
+        <div class="exp-name">Skypool Experience</div>
+        <div class="exp-loc">Dubai</div>
+      </div>
+      <div style="position:absolute;bottom:0.6rem;right:0.7rem;display:flex;gap:5px;z-index:4;">
+        <div class="skypool-dot active" style="width:5px;height:5px;border-radius:50%;background:var(--teal-400);transition:background 0.3s;"></div>
+        <div class="skypool-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="skypool-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="skypool-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+      </div>
+    </div>
+
+ <!-- Apartments & Villas -->
+    <div class="exp-card" id="apartments-card">
+      <img fetchpriority="high" decoding="sync" class="exp-card-img apartments-slide" src="https://iili.io/C3OmU42.jpg" alt="Apartments &amp; Villas" style="opacity:1;">
+      <img loading="lazy" decoding="async" class="exp-card-img apartments-slide" src="https://iili.io/C3OpnaI.jpg" alt="Apartments &amp; Villas" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img apartments-slide" src="https://iili.io/C3OpgoJ.jpg" alt="Apartments &amp; Villas" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img apartments-slide" src="https://iili.io/C3OyFR9.jpg" alt="Apartments &amp; Villas" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img apartments-slide" src="https://iili.io/C3OyPWb.jpg" alt="Apartments &amp; Villas" style="opacity:0;position:absolute;inset:0;">
+      <img loading="lazy" decoding="async" class="exp-card-img apartments-slide" src="https://iili.io/C3eHq6x.jpg" alt="Apartments &amp; Villas" style="opacity:0;position:absolute;inset:0;">
+      <div class="exp-card-overlay"></div>
+      <div class="exp-card-body">
+        <span class="exp-icon">🏡</span>
+        <div class="exp-name">Apartments &amp; Villas</div>
+        <div class="exp-loc">Worldwide</div>
+      </div>
+      <div style="position:absolute;bottom:0.6rem;right:0.7rem;display:flex;gap:5px;z-index:4;">
+        <div class="apartments-dot active" style="width:5px;height:5px;border-radius:50%;background:var(--teal-400);transition:background 0.3s;"></div>
+        <div class="apartments-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="apartments-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="apartments-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="apartments-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+        <div class="apartments-dot" style="width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);transition:background 0.3s;"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section">
+  <p class="section-label">How It Works</p>
+  <h2>Everything Handled in <em>Four Simple Steps</em></h2>
+  <p class="section-intro">SCIERGE removes the friction so you experience only the exceptional.</p>
+
+  <div class="steps-grid">
+    <div class="step">
+      <div class="step-num">01</div>
+      <div>
+        <div class="step-title">Tell Us Your Vision</div>
+        <div class="step-desc">Share your destination, dates, preferences and any special requests. Our team listens closely to understand exactly what you need.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <div>
+        <div class="step-title">We Curate & Confirm</div>
+        <div class="step-desc">Your dedicated concierge handpicks the finest options — flights, charters, hotels, drivers, experiences — and presents a bespoke proposal.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <div>
+        <div class="step-title">Approve & Relax</div>
+        <div class="step-desc">You approve the plan. We handle all bookings, negotiations, deposits and coordination — keeping you informed at every step.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">04</div>
+      <div>
+        <div class="step-title">Arrive & Experience</div>
+        <div class="step-desc">Everything is in place. Your chauffeur is waiting, your room is upgraded, your table is reserved. Simply arrive and immerse yourself.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<div class="testimonial-section">
+<div class="testimonial-visual">
+  <img fetchpriority="high" decoding="sync" 
+    src="https://iili.io/C2uXkOl.jpg" 
+    alt="Luxury Concierge Testimonial"
+    style="
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    "
+  >
+</div>
+  <div class="testimonial-content">
+    <div class="quote-mark">"</div>
+    <p class="quote-text">SCIERGE arranged our private jet to Dubai, desert dune riding, a superyacht sunset cruise and a Michelin dinner — all within 48 hours of my request. I've never felt so effortlessly looked after.</p>
+    <div class="quote-author">
+      <div class="author-avatar">
+  <img fetchpriority="high" decoding="sync" 
+    src="https://i.postimg.cc/7hzZSYbP/pexels-olly-3778603.jpg" 
+    alt="Amara Osei-Bonsu"
+    style="
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      border-radius:50%;
+    "
+  >
+</div>
+      <div>
+        <div class="author-name">Jonathan Houghton</div>
+        <div class="author-route">London → Dubai Bespoke Experience</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-items">
+    <div class="trust-item"><i class="fas fa-shield-alt"></i> Trusted & Discreet</div>
+    <div class="trust-item"><i class="fas fa-users"></i> Dedicated Concierge Team</div>
+    <div class="trust-item"><i class="fas fa-clock"></i> 24/7 Worldwide Support</div>
+    <div class="trust-item"><i class="fas fa-globe"></i> 200+ Destinations</div>
+  </div>
+</div>
+
+
+<!-- APP DOWNLOAD SECTION -->
+<div class="app-section">
+  <div class="app-section-label">Launching Soon</div>
+  <h2>Take S<span class="c">C</span>IERGE Everywhere</h2>
+  <p class="app-section-sub">Book flights, manage your trips, and access boarding passes right from your phone. Available on iOS and Android.</p>
+  <div class="app-store-btns">
+    <a href="#" class="app-store-btn">
+      <div class="app-store-btn-icon"><i class="fab fa-apple"></i></div>
+      <div class="app-store-btn-text">
+        <span class="app-store-btn-soon">Launching Soon</span>
+        <span class="app-store-btn-name">App Store</span>
+      </div>
+    </a>
+    <a href="#" class="app-store-btn">
+      <div class="app-store-btn-icon"><i class="fab fa-google-play"></i></div>
+      <div class="app-store-btn-text">
+        <span class="app-store-btn-soon">Launching Soon</span>
+        <span class="app-store-btn-name">Google Play</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-row">
+        <div class="footer-emblem"><svg width="16" height="16"><use href="#diamond"/></svg></div>
+        <span class="footer-wordmark">S<span class="c">C</span>IERGE</span>
+      </div>
+      <p class="footer-tagline">Elevating every journey and lifestyle with premium concierge services and unmatched attention to detail.</p>
+    </div>
+    <div>
+      <h4 class="footer-col-title">SCIERGE Free E-Book</h4>
+      <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:1rem;line-height:1.5;">Browse our full fleet of 29 private jets — specs, cabin dimensions and amenities.</p>
+      <button onclick="document.getElementById('ebook-modal').style.display='flex'" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--teal-400),var(--teal-600));color:var(--dark-950);padding:0.7rem 1.2rem;border-radius:99px;font-size:0.75rem;font-weight:700;border:none;cursor:pointer;letter-spacing:0.05em;text-transform:uppercase;box-shadow:0 4px 18px rgba(45,212,191,0.3);transition:box-shadow 0.2s,transform 0.15s;" onmouseover="this.style.boxShadow='0 8px 28px rgba(45,212,191,0.5)';this.style.transform='translateY(-1px)'" onmouseout="this.style.boxShadow='0 4px 18px rgba(45,212,191,0.3)';this.style.transform='translateY(0)'">
+        <i class="fas fa-download"></i> Download E-Book
+      </button>
+    </div>
+    <div>
+      <h4 class="footer-col-title">Company</h4>
+      <ul class="footer-links">
+        <li><a href="scierge_about_final (1).html">About Us</a></li>
+        <li><a href="scierge_contact_updated (4).html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-col-title">Legal</h4>
+      <ul class="footer-links">
+        <li><a href="scierge_privacy_policy (1).html">Privacy policy</a></li>
+        <li><a href="scierge_terms.html">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 SCIERGE. All rights reserved.</p>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/people/Scierge/61590704127785/" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </div>
+</footer>
+
+<div id="cookie-bar" role="dialog" aria-label="Cookie consent" aria-live="polite">
+  <div class="cookie-inner">
+    <div class="cookie-icon-wrap">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10c0-.34-.02-.67-.05-1a3.5 3.5 0 01-3.45-3.45A3.5 3.5 0 0115 4.05 9.96 9.96 0 0012 2z" fill="rgba(45,212,191,0.15)" stroke="var(--teal-400)" stroke-width="1.5"/>
+        <circle cx="8.5" cy="13.5" r="1.5" fill="var(--teal-400)"/>
+        <circle cx="12" cy="9" r="1" fill="var(--teal-400)" opacity="0.7"/>
+        <circle cx="15" cy="13" r="1" fill="var(--teal-400)" opacity="0.5"/>
+      </svg>
+    </div>
+    <div class="cookie-text">
+      <p class="cookie-headline">We use cookies to elevate your journey.</p>
+      <p class="cookie-body">SCIERGE uses cookies to personalise your experience, remember preferences, and analyse how our platform performs. You choose what you share. <a href="#" class="cookie-link" onclick="openCookiePolicy(event)">Cookie Policy</a></p>
+    </div>
+    <div class="cookie-actions">
+      <button class="cookie-btn-ghost" id="cookie-decline" aria-label="Decline non-essential cookies">Essential only</button>
+      <button class="cookie-btn-primary" id="cookie-accept" aria-label="Accept all cookies">Accept all</button>
+    </div>
+    <button class="cookie-close" id="cookie-close" aria-label="Close cookie notice">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- Cookie Policy Modal -->
+<div id="cookie-policy-modal" style="display:none;position:fixed;inset:0;z-index:99999;background:rgba(6,6,10,0.85);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);overflow-y:auto;padding:2rem 1rem;">
+  <div style="max-width:680px;margin:auto;background:var(--dark-800);border:1px solid rgba(45,212,191,0.18);border-radius:20px;box-shadow:0 24px 80px rgba(0,0,0,0.7),0 0 0 1px rgba(45,212,191,0.05);position:relative;overflow:hidden;">
+    <!-- top accent line -->
+    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--teal-400),var(--teal-600),transparent);opacity:0.7;"></div>
+    <!-- header -->
+    <div style="display:flex;align-items:center;gap:12px;padding:1.75rem 2rem 1.25rem;">
+      <div style="width:40px;height:40px;border-radius:10px;background:rgba(45,212,191,0.08);border:1px solid rgba(45,212,191,0.18);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10c0-.34-.02-.67-.05-1a3.5 3.5 0 01-3.45-3.45A3.5 3.5 0 0115 4.05 9.96 9.96 0 0012 2z" fill="rgba(45,212,191,0.15)" stroke="var(--teal-400)" stroke-width="1.5"/><circle cx="8.5" cy="13.5" r="1.5" fill="var(--teal-400)"/><circle cx="12" cy="9" r="1" fill="var(--teal-400)" opacity="0.7"/><circle cx="15" cy="13" r="1" fill="var(--teal-400)" opacity="0.5"/></svg>
+      </div>
+      <div>
+        <h2 style="font-size:1.15rem;font-weight:800;color:var(--text-primary);letter-spacing:-0.3px;">Cookie Policy</h2>
+        <p style="font-size:0.72rem;color:var(--text-muted);margin-top:2px;">Last updated: June 2026</p>
+      </div>
+      <button onclick="closeCookiePolicy()" aria-label="Close" style="margin-left:auto;width:32px;height:32px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:50%;color:var(--text-muted);cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:color 0.2s,border-color 0.2s;" onmouseover="this.style.color='var(--teal-400)';this.style.borderColor='rgba(45,212,191,0.3)'" onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='rgba(255,255,255,0.08)'">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <!-- divider -->
+    <div style="height:1px;background:rgba(255,255,255,0.06);margin:0 2rem;"></div>
+    <!-- body -->
+    <div style="padding:1.5rem 2rem 2rem;font-size:0.82rem;color:var(--text-muted);line-height:1.75;display:flex;flex-direction:column;gap:1.25rem;">
+
+      <p>SCIERGE ("we", "our", or "us") uses cookies and similar tracking technologies on our website to enhance your experience, remember your preferences, and understand how our platform is used. This Cookie Policy explains what cookies are, how we use them, and how you can manage your preferences.</p>
+
+      <div>
+        <h3 style="font-size:0.88rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">What Are Cookies?</h3>
+        <p>Cookies are small text files placed on your device when you visit a website. They are widely used to make websites work more efficiently, to remember your preferences, and to provide information to the website owners.</p>
+      </div>
+
+      <div>
+        <h3 style="font-size:0.88rem;font-weight:700;color:var(--text-primary);margin-bottom:0.75rem;">Types of Cookies We Use</h3>
+        <div style="display:flex;flex-direction:column;gap:0.75rem;">
+          <div style="background:rgba(45,212,191,0.04);border:1px solid rgba(45,212,191,0.1);border-radius:10px;padding:0.9rem 1rem;">
+            <p style="font-weight:700;color:var(--text-primary);margin-bottom:0.3rem;font-size:0.82rem;">🔒 Essential Cookies</p>
+            <p>These cookies are strictly necessary for the website to function. They enable core features such as navigation, security, and access to members-only areas. You cannot opt out of these.</p>
+          </div>
+          <div style="background:rgba(45,212,191,0.04);border:1px solid rgba(45,212,191,0.1);border-radius:10px;padding:0.9rem 1rem;">
+            <p style="font-weight:700;color:var(--text-primary);margin-bottom:0.3rem;font-size:0.82rem;">⚙️ Functional Cookies</p>
+            <p>These cookies allow us to remember your preferences — such as language, region, and saved packages — to provide a more personalised experience across sessions.</p>
+          </div>
+          <div style="background:rgba(45,212,191,0.04);border:1px solid rgba(45,212,191,0.1);border-radius:10px;padding:0.9rem 1rem;">
+            <p style="font-weight:700;color:var(--text-primary);margin-bottom:0.3rem;font-size:0.82rem;">📊 Analytics Cookies</p>
+            <p>We use analytics cookies (such as those provided by Google Analytics) to understand how visitors interact with our site — which pages are most visited, how long sessions last, and where traffic originates. This data is aggregated and anonymous.</p>
+          </div>
+          <div style="background:rgba(45,212,191,0.04);border:1px solid rgba(45,212,191,0.1);border-radius:10px;padding:0.9rem 1rem;">
+            <p style="font-weight:700;color:var(--text-primary);margin-bottom:0.3rem;font-size:0.82rem;">🎯 Marketing Cookies</p>
+            <p>These cookies track your browsing activity to help us deliver relevant advertisements and promotional offers. They may be set by us or by third-party advertising partners.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 style="font-size:0.88rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Third-Party Cookies</h3>
+        <p>Some cookies are placed by third-party services that appear on our pages, including video players, social media embeds, and analytics providers. These third parties have their own privacy and cookie policies.</p>
+      </div>
+
+      <div>
+        <h3 style="font-size:0.88rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">How to Manage Cookies</h3>
+        <p>You can control and manage cookies in several ways. Most browsers allow you to refuse or accept cookies, delete existing cookies, or be notified when a new cookie is set. Please note that disabling certain cookies may affect website functionality. You may also use the <strong style="color:var(--text-primary);">Essential only</strong> option in our cookie banner to limit cookies to strictly necessary ones.</p>
+      </div>
+
+      <div>
+        <h3 style="font-size:0.88rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Updates to This Policy</h3>
+        <p>We may update this Cookie Policy from time to time to reflect changes in technology, legislation, or our data practices. Any updates will be posted on this page with a revised date.</p>
+      </div>
+
+      <div>
+        <h3 style="font-size:0.88rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Contact Us</h3>
+        <p>If you have any questions about our use of cookies, please contact us at <a href="mailto:privacy@scierge.it.com" style="color:var(--teal-400);text-decoration:none;font-weight:600;">privacy@scierge.it.com</a>.</p>
+      </div>
+
+      <div style="padding-top:0.5rem;">
+        <button onclick="closeCookiePolicy()" style="background:linear-gradient(135deg,var(--teal-400),var(--teal-600));color:var(--dark-950);border:none;padding:0.65rem 1.5rem;border-radius:99px;font-family:inherit;font-size:0.8rem;font-weight:700;cursor:pointer;box-shadow:0 4px 18px rgba(45,212,191,0.3);transition:box-shadow 0.2s,transform 0.15s;" onmouseover="this.style.boxShadow='0 8px 28px rgba(45,212,191,0.5)';this.style.transform='translateY(-1px)'" onmouseout="this.style.boxShadow='0 4px 18px rgba(45,212,191,0.3)';this.style.transform='translateY(0)'">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openCookiePolicy(e) {
+    if (e) e.preventDefault();
+    var m = document.getElementById('cookie-policy-modal');
+    m.style.display = 'flex';
+    m.style.alignItems = 'flex-start';
+    m.scrollTop = 0;
+    document.body.style.overflow = 'hidden';
+  }
+  function closeCookiePolicy() {
+    document.getElementById('cookie-policy-modal').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+  document.getElementById('cookie-policy-modal').addEventListener('click', function(e) {
+    if (e.target === this) closeCookiePolicy();
+  });
+</script>
+
+<!-- Cursor Elements -->
+<div id="cursor-outer"></div>
+<div id="cursor-inner"></div>
+<script>
+  // Unified slideshow initializer
+  function initSlideshow(slideClass, dotClass, interval) {
+    const slides = document.querySelectorAll('.' + slideClass);
+    const dots   = document.querySelectorAll('.' + dotClass);
+    if (!slides.length) return;
+    let current = 0;
+    function goTo(n) {
+      slides[current].style.opacity = '0';
+      if (dots[current]) dots[current].classList.remove('active');
+      current = (n + slides.length) % slides.length;
+      slides[current].style.opacity = '1';
+      if (dots[current]) dots[current].classList.add('active');
+    }
+    setInterval(() => goTo(current + 1), interval);
+  }
+  [
+    ['wellness-slide',    'wellness-dot',     5000],
+    ['events-slide',      'events-dot',       5500],
+    ['jet-slide',         'jet-dot',          6000],
+    ['chauffeur-slide',   'chauffeur-dot',    6500],
+    ['detailing-slide',   'detailing-dot',    5000],
+    ['security-slide',    'security-dot',     5500],
+    ['dining-slide',      'dining-dot',       5200],
+    ['yacht-events-slide','yacht-events-dot', 5800],
+    ['pkg1-slide',        'pkg1-dot',         5200],
+    ['pkg2-slide',        'pkg2-dot',         5600],
+    ['pkg3-slide',        'pkg3-dot',         4900],
+    ['pkg4-slide',        'pkg4-dot',         5400],
+    ['heli-slide',        'heli-dot',         5000],
+    ['luxcar-slide',      'luxcar-dot',       5200],
+    ['jetski-slide',      'jetski-dot',       4800],
+    ['jetcar-slide',      'jetcar-dot',       5100],
+    ['dunebuggy-slide',   'dunebuggy-dot',    5300],
+    ['quadbike-slide',    'quadbike-dot',     5000],
+    ['flyboard-slide',    'flyboard-dot',     5200],
+    ['efoil-slide',       'efoil-dot',        5400],
+    ['jetpack-slide',     'jetpack-dot',      5100],
+    ['dolphins-slide',    'dolphins-dot',     5300],
+    ['donutride-slide',   'donutride-dot',    5000],
+    ['waterski-slide',    'waterski-dot',     5200],
+    ['camelride-slide',   'camelride-dot',    5300],
+    ['falconry-slide',    'falconry-dot',     5100],
+    ['skypool-slide',     'skypool-dot',      5400],
+    ['safari-slide',      'safari-dot',       5200],
+    ['apartments-slide',  'apartments-dot',   5300],
+  ].forEach(([sc, dc, iv]) => initSlideshow(sc, dc, iv));
+  // Stack pkg slides as absolute after first
+  ['pkg1-slide','pkg2-slide','pkg3-slide','pkg4-slide'].forEach(cls => {
+    document.querySelectorAll('.' + cls).forEach((s, i) => {
+      if (i > 0) { s.style.position = 'absolute'; s.style.inset = '0'; s.style.opacity = '0'; }
+    });
+  });
+
+
+  // Lazy-load all images below the fold (skip priority images)
+  document.querySelectorAll('img').forEach((img, i) => {
+    if (i > 2 && img.getAttribute('fetchpriority') !== 'high') {
+      img.loading = 'lazy';
+      img.decoding = 'async';
+    }
+  });
+
+  const navbar = document.getElementById('navbar');
+  const menuBtn = document.querySelector('.mobile-menu-btn');
+  let menuOpen = false;
+
+  menuBtn.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    navbar.classList.toggle('mobile-open', menuOpen);
+    menuBtn.setAttribute('aria-expanded', menuOpen);
+  });
+
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      menuOpen = false;
+      navbar.classList.remove('mobile-open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Navbar scroll
+  window.addEventListener('scroll', () => {
+    navbar.style.background = window.pageYOffset > 100
+      ? 'rgba(6,6,10,0.98)' : 'rgba(6,6,10,0.92)';
+  }, { passive: true });
+
+  // Custom Cursor
+  if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    const outer = document.getElementById('cursor-outer');
+    const inner = document.getElementById('cursor-inner');
+    let mx = 0, my = 0, ox = 0, oy = 0, ix = 0, iy = 0, active = false;
+
+    function animate() {
+      if (!active) return;
+      ox += (mx - ox) * 0.15; oy += (my - oy) * 0.15;
+      ix += (mx - ix) * 0.25; iy += (my - iy) * 0.25;
+      outer.style.left = ox + 'px'; outer.style.top = oy + 'px';
+      inner.style.left = ix + 'px'; inner.style.top = iy + 'px';
+      requestAnimationFrame(animate);
+    }
+
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      if (!active) { active = true; animate(); }
+    }, { passive: true });
+
+    document.querySelectorAll('a, button, .pkg-card, .service-card, .exp-card').forEach(el => {
+      el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+      el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+    });
+  }
+// Cookie Bar
+  (function() {
+    const bar = document.getElementById('cookie-bar');
+    if (!bar) return;
+    const dismissed = localStorage.getItem('scierge_cookie_choice');
+    if (!dismissed) {
+      // Slight delay so page loads first
+      setTimeout(() => bar.classList.add('cookie-bar--visible'), 800);
+    }
+    function dismiss() {
+      bar.classList.remove('cookie-bar--visible');
+      bar.classList.add('cookie-bar--hidden');
+    }
+    document.getElementById('cookie-accept').addEventListener('click', () => {
+      localStorage.setItem('scierge_cookie_choice', 'all');
+      dismiss();
+    });
+    document.getElementById('cookie-decline').addEventListener('click', () => {
+      localStorage.setItem('scierge_cookie_choice', 'essential');
+      dismiss();
+    });
+    document.getElementById('cookie-close').addEventListener('click', () => {
+      localStorage.setItem('scierge_cookie_choice', 'dismissed');
+      dismiss();
+    });
+  })()
+</script>
+
+
+<!-- EXPERIENCE DETAIL MODAL -->
+<div id="exp-modal" style="display:none;position:fixed;inset:0;z-index:99998;align-items:center;justify-content:center;padding:1rem;background:rgba(0,0,0,0.8);backdrop-filter:blur(10px);" onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:var(--dark-800);border:1px solid rgba(45,212,191,0.25);border-radius:20px;max-width:480px;width:100%;position:relative;box-shadow:0 30px 80px rgba(0,0,0,0.7);overflow:hidden;animation:fadeUp 0.3s ease both;">
+    <div id="exp-modal-img" style="width:100%;height:220px;background:var(--dark-700);position:relative;overflow:hidden;">
+      <img fetchpriority="high" decoding="sync" id="exp-modal-photo" src="" alt="" style="width:100%;height:100%;object-fit:cover;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(18,18,26,0.9) 0%,transparent 60%);"></div>
+      <button onclick="document.getElementById('exp-modal').style.display='none'" style="position:absolute;top:1rem;right:1rem;background:rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.15);border-radius:8px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#fff;font-size:1rem;">✕</button>
+    </div>
+    <div style="padding:1.75rem 2rem 2rem;">
+      <p id="exp-modal-loc" style="font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--teal-400);font-weight:700;margin-bottom:0.4rem;"></p>
+      <h3 id="exp-modal-name" style="font-size:1.4rem;font-weight:800;color:var(--text-primary);margin-bottom:0.75rem;letter-spacing:-0.3px;"></h3>
+      <p id="exp-modal-desc" style="font-size:0.88rem;color:var(--text-muted);line-height:1.75;margin-bottom:1.5rem;"></p>
+      <a href="scierge_quote_updated (17).html" onclick="document.getElementById('exp-modal').style.display='none'" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--teal-400),var(--teal-600));color:var(--dark-950);padding:0.8rem 1.6rem;border-radius:99px;font-size:0.78rem;font-weight:700;text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;box-shadow:0 4px 18px rgba(45,212,191,0.3);">
+        <i class="fas fa-gem"></i> Book This Experience
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var experiences = {
+    'wellness-card':    { name: 'Wellness & Spa', loc: 'Bali · Maldives · Switzerland', img: 'https://iili.io/C25NvRe.jpg', desc: 'Surrender to world-class wellness rituals at the most exclusive retreats on Earth. From volcanic hot-spring baths in Iceland to bespoke Ayurvedic programmes in Bali and alpine thermal spas in Switzerland, SCIERGE curates every detail — private treatment rooms, resident healers, and complete digital detox for those who seek true restoration.' },
+    'events-card':      { name: 'Event Passes', loc: 'Worldwide', img: 'https://iili.io/C27EXB1.jpg', desc: 'Access the world\'s most coveted events — Formula 1 paddock passes, Wimbledon royal boxes, Cannes Film Festival screenings, Coachella VIP, and more. SCIERGE secures seats where none exist, with private transfers, hospitality suites, and curated itineraries wrapped around every event.' },
+    'jet-card':         { name: 'Private Jet Charter', loc: 'Worldwide', img: 'https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=600&q=80&auto=format&fit=crop', desc: 'Fly on your schedule, not an airline\'s. SCIERGE arranges on-demand private jet charters across our fleet of light, midsize, and ultra-long-range aircraft. Enjoy personalised cabin catering, seamless ground transport, and complete privacy from departure to destination — anywhere on Earth.' },
+    'chauffeur-card':   { name: 'Chauffeur Services', loc: 'Worldwide', img: 'https://iili.io/C2aV637.jpg', desc: 'Arrive with quiet confidence. Our professional chauffeurs operate an immaculate fleet of luxury vehicles — Rolls-Royce, Bentley, Mercedes S-Class and more. Whether it\'s an airport transfer, a full-day city itinerary, or a multi-city tour, every journey is discreet, punctual, and impeccably presented.' },
+    'detailing-card':   { name: 'Car Detailing', loc: 'Worldwide', img: 'https://iili.io/C2Wqv1a.jpg', desc: 'Restore your vehicle to concours condition. Our master detailers use ceramic coatings, paint correction, and hand-polishing techniques that protect and elevate your car\'s finish. Available at your home, office, or selected partner locations — because your car deserves the same standard as everything else you own.' },
+    'security-card':    { name: 'Personal Security', loc: 'Worldwide', img: 'https://iili.io/C2Wu8rP.jpg', desc: 'Travel with absolute peace of mind. SCIERGE connects you with vetted close protection operatives and advance security teams trained to the highest international standards. From celebrity appearances to executive travel in sensitive regions, your safety is arranged invisibly and efficiently.' },
+    'dining-card':      { name: 'Private Dining', loc: 'Worldwide', img: 'https://iili.io/Cfv4lHb.jpg', desc: 'Your table, your rules. SCIERGE arranges exclusive private dining experiences — Michelin-starred chefs brought to your villa, rooftop dinners above city skylines, submarine restaurants in the Maldives, or a candlelit table set alone in a museum after hours. Every detail, from wine pairing to floral arrangements, is handled.' },
+    'yacht-events-card':{ name: 'Yacht & Cruise Events', loc: 'Mediterranean · Caribbean · Asia', img: 'https://iili.io/C2WvRaI.jpg', desc: 'Host the unforgettable on the open water. From intimate superyacht cocktail evenings to full corporate charters across the Mediterranean, SCIERGE manages vessel selection, crew, entertainment, catering, and every onboard detail. The sea becomes your private venue.' },
+    'heli-card':        { name: 'Helicopter Tours', loc: 'Worldwide', img: 'https://iili.io/C3IPt7n.jpg', desc: 'See the world from a perspective few ever experience. Helicopter tours curated by SCIERGE take you over the Grand Canyon at sunrise, above the Manhattan skyline at dusk, across the Swiss Alps, or along the Dubai coastline — with private boarding, champagne, and a pilot who knows exactly when to give you silence.' },
+    'luxcars-card':     { name: 'Luxury Cars', loc: 'Worldwide', img: 'https://iili.io/C3T3dtp.jpg', desc: 'Drive the icons. SCIERGE arranges access to the world\'s most desirable vehicles — Lamborghini, Ferrari, McLaren, Rolls-Royce and beyond — for a day, a week, or an entire road trip. Delivered to your hotel, your villa, or your yacht. Full insurance and concierge support included.' },
+    'jetski-card':      { name: 'Jet Ski', loc: 'Dubai · Maldives · Miami', img: 'https://iili.io/C3TTDI1.jpg', desc: 'Cut through turquoise water at full throttle. Our jet ski experiences are set at the world\'s most breathtaking coastal locations — from the calm lagoons of the Maldives to the electric waterfront of Dubai Marina. Private instructors, safety briefings, and premium machines come as standard.' },
+    'jetcar-card':      { name: 'Jet Car', loc: 'UAE · USA', img: 'https://iili.io/C3TOTcx.png', desc: 'Feel the force of a jet-powered supercar on a private track. An experience reserved for true adrenaline seekers — SCIERGE arranges exclusive access to jet car experiences in the UAE and USA, complete with safety gear, professional guidance, and post-run hospitality.' },
+    'dunebuggy-card':   { name: 'Dune Buggy', loc: 'Dubai · Morocco · Qatar', img: 'https://iili.io/C3TQRHP.jpg', desc: 'Tear across golden desert dunes in a high-performance buggy built for the terrain. Our desert experiences take you deep into landscapes that few explore — guided convoys, sunset drives, and Bedouin camp arrivals arranged entirely by SCIERGE for an unforgettable off-road adventure.' },
+    'quadbikes-card':   { name: 'Quad Bikes', loc: 'Worldwide', img: 'https://iili.io/C3uJGQS.jpg', desc: 'Explore wild terrain on four wheels with no rules and no roads. From mountain trails in Queenstown to beach rides in Mykonos, SCIERGE arranges private quad bike experiences with expert guides, all safety equipment, and post-ride refreshments in spectacular locations.' },
+    'flyboard-card':    { name: 'Flyboard', loc: 'Dubai · Ibiza · Miami', img: 'https://iili.io/C3uTwcx.jpg', desc: 'Defy gravity above the water. Flyboarding is one of the most exhilarating water sports on the planet — propelled by jets of water, you rise above the surface like Iron Man. SCIERGE arranges private sessions with certified instructors in the world\'s most glamorous coastal settings.' },
+    'efoil-card':       { name: 'E-foil', loc: 'Maldives · Bali · Hawaii', img: 'https://iili.io/C3uwpcv.png', desc: 'Glide silently above the ocean surface on an electric hydrofoil board. The E-foil is the future of luxury water sport — whisper-quiet, effortless, and breathtakingly smooth. SCIERGE provides private tuition in the clearest, most beautiful waters in the world.' },
+    'jetpack-card':     { name: 'Jetpack', loc: 'Dubai · Miami · Monaco', img: 'https://iili.io/C3AI4RV.png', desc: 'Strap in and take flight. Water-propelled jetpacks launch you metres above the ocean surface for an experience that feels like pure science fiction. SCIERGE arranges private sessions in the most iconic waterfront locations, with trained pilots and full safety support.' },
+    'dolphins-card':    { name: 'Swim with Dolphins', loc: 'Maldives · Mexico · New Zealand', img: 'https://iili.io/C3AvPWB.jpg', desc: 'Share the ocean with one of nature\'s most intelligent and joyful creatures. Our dolphin experiences are ethically curated — conducted in open water with wild or sanctuary dolphins, guided by marine biologists, and designed to leave no trace. A moment of connection you will never forget.' },
+    'donutride-card':   { name: 'Donut Ride', loc: 'Dubai · Miami · Ibiza', img: 'https://iili.io/C3A6ArB.png', desc: 'Hold on and laugh — the donut ride is pure, unfiltered fun on the water. Towed at speed behind a powerboat while spinning on an inflatable ring, it\'s the ultimate group thrill. SCIERGE sets it up in private coves or alongside your superyacht for an afternoon of high-energy enjoyment.' },
+    'waterski-card':    { name: 'Waterski', loc: 'Dubai · Monaco · Maldives', img: 'https://iili.io/C3Ayf2a.webp', desc: 'Slice through glassy water behind a high-performance powerboat. Waterskiing is one of the most elegant water sports — fast, skilful, and visually spectacular. SCIERGE arranges private lessons and sessions at the most beautiful waterways globally, for beginners and advanced skiers alike.' },
+    'camelride-card':   { name: 'Camel Ride', loc: 'Dubai · Morocco · Jordan', img: 'https://iili.io/C3RA0Bt.jpg', desc: 'Travel as explorers once did — atop a camel through vast desert landscapes. Whether crossing the red dunes of Dubai at golden hour or moving through the ancient rose-red city of Petra, SCIERGE crafts camel experiences that connect you with centuries of desert culture, with modern comfort guaranteed.' },
+    'falconry-card':    { name: 'Falconry', loc: 'UAE · Scotland · Kazakhstan', img: 'https://iili.io/C3RWPBs.jpg', desc: 'Experience one of humanity\'s oldest arts. Falconry has been practised for 4,000 years across Arabia, Asia, and Europe — and SCIERGE brings it to you through intimate private sessions with master falconers and magnificent birds of prey. A rare, ceremonial encounter with living heritage.' },
+    'skypool-card':     { name: 'Skypool Experience', loc: 'Dubai · Singapore · Bangkok', img: 'https://iili.io/C3RUO4S.jpg', desc: 'Float in a transparent pool suspended between two skyscrapers, hundreds of metres above the city. SCIERGE arranges private access to the world\'s most extraordinary sky pools — with champagne service, exclusive time slots, and the kind of view that redefines what luxury means.' },
+    'safari-card':      { name: 'Safari', loc: 'Kenya · Tanzania · South Africa', img: 'https://iili.io/C353A0B.jpg', desc: 'Witness the raw, unhurried drama of the African wilderness. SCIERGE arranges private safari experiences — exclusive concession access, expert rangers, luxury tented camps, and hot air balloon mornings over the Masai Mara. See the Big Five on your schedule, from the finest vantage points on the continent.' },
+    'apartments-card':  { name: 'Apartments & Villas', loc: 'Dubai · Maldives · Santorini', img: 'https://iili.io/C3OmU42.jpg', desc: 'Handpicked private residences that become your personal sanctuary. From sky-high Dubai penthouses with panoramic skyline views to overwater Maldives villas above turquoise lagoons and cliffside Santorini retreats overlooking the Aegean — SCIERGE secures the finest properties, fully staffed and prepared to your exact preferences before you arrive.' },
+  };
+
+  document.querySelectorAll('.exp-card').forEach(function(card) {
+    card.addEventListener('click', function() {
+      var id = card.id;
+      var data = experiences[id];
+      if (!data) return;
+      document.getElementById('exp-modal-name').textContent = data.name;
+      document.getElementById('exp-modal-loc').textContent = data.loc;
+      document.getElementById('exp-modal-desc').textContent = data.desc;
+      document.getElementById('exp-modal-photo').src = data.img;
+      document.getElementById('exp-modal-photo').alt = data.name;
+      document.getElementById('exp-modal').style.display = 'flex';
+    });
+  });
+})();
+</script>
+<div id="ebook-modal" style="display:none;position:fixed;inset:0;z-index:99999;align-items:center;justify-content:center;padding:1rem;background:rgba(0,0,0,0.75);backdrop-filter:blur(8px);">
+  <div style="background:var(--dark-800);border:1px solid rgba(45,212,191,0.25);border-radius:20px;padding:2.5rem 2rem;max-width:420px;width:100%;position:relative;box-shadow:0 30px 80px rgba(0,0,0,0.6);">
+
+    <!-- Close -->
+    <button onclick="document.getElementById('ebook-modal').style.display='none'" style="position:absolute;top:1rem;right:1rem;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--text-muted);font-size:1rem;line-height:1;">✕</button>
+
+    <!-- Icon -->
+    <div id="modal-step-form">
+      <div style="width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,var(--teal-400),var(--teal-600));display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;box-shadow:0 0 24px rgba(45,212,191,0.35);">
+        <i class="fas fa-file-pdf" style="color:var(--dark-950);font-size:1.3rem;"></i>
+      </div>
+
+      <p style="font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--teal-400);font-weight:700;margin-bottom:0.5rem;">Exclusive Fleet Guide</p>
+      <h3 style="font-size:1.4rem;font-weight:800;color:var(--text-primary);margin-bottom:0.5rem;letter-spacing:-0.3px;">Download the Free E-Book</h3>
+      <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.6;margin-bottom:1.75rem;">Enter your email to get instant access to our 29-jet fleet guide — plus exclusive deals and first access to new routes.</p>
+
+      <div style="display:flex;flex-direction:column;gap:0.75rem;">
+        <input id="modal-email-input" type="email" placeholder="Your email address" style="background:var(--dark-700);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:0.85rem 1rem;color:var(--text-primary);font-family:inherit;font-size:0.88rem;outline:none;transition:border-color 0.2s;width:100%;box-sizing:border-box;" onfocus="this.style.borderColor='rgba(45,212,191,0.5)'" onblur="this.style.borderColor='rgba(255,255,255,0.1)'" onkeydown="if(event.key==='Enter')document.getElementById('modal-submit-btn').click()">
+        <p id="modal-error" style="display:none;color:#f87171;font-size:0.75rem;margin-top:-0.25rem;">Please enter a valid email address.</p>
+        <button id="modal-submit-btn" onclick="handleEbookSubmit()" style="display:flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,var(--teal-400),var(--teal-600));color:var(--dark-950);border:none;border-radius:10px;padding:0.9rem;font-family:inherit;font-size:0.82rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;width:100%;transition:filter 0.2s;">
+          <i class="fas fa-download"></i> Get My Free E-Book
+        </button>
+      </div>
+
+      <p style="font-size:0.7rem;color:var(--text-muted);text-align:center;margin-top:1rem;opacity:0.7;"><i class="fas fa-lock" style="margin-right:4px;"></i>No spam. Unsubscribe anytime.</p>
+    </div>
+
+    <!-- Success step -->
+    <div id="modal-step-success" style="display:none;text-align:center;">
+      <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--teal-400),var(--teal-600));display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;box-shadow:0 0 28px rgba(45,212,191,0.4);">
+        <i class="fas fa-check" style="color:var(--dark-950);font-size:1.5rem;"></i>
+      </div>
+      <h3 style="font-size:1.3rem;font-weight:800;color:var(--text-primary);margin-bottom:0.5rem;">You're in!</h3>
+      <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.6;margin-bottom:1.75rem;">Thanks for joining. Your download is starting now.</p>
+      <a id="ebook-final-link" download="Scierge_E_Book.pdf" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,var(--teal-400),var(--teal-600));color:var(--dark-950);border-radius:10px;padding:0.9rem 1.5rem;font-size:0.82rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;width:100%;box-sizing:border-box;">
+        <i class="fas fa-download"></i> Download Now
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<script>
+(function() {
+  var pdfUrl = 'scierge_ebook.pdf';
+
+  window.handleEbookSubmit = function() {
+    var input = document.getElementById('modal-email-input');
+    var error = document.getElementById('modal-error');
+    var email = input.value.trim();
+    var valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!valid) {
+      error.style.display = 'block';
+      input.style.borderColor = 'rgba(248,113,113,0.6)';
+      return;
+    }
+    error.style.display = 'none';
+    document.getElementById('modal-step-form').style.display = 'none';
+    document.getElementById('modal-step-success').style.display = 'block';
+    var link = document.getElementById('ebook-final-link');
+    if (pdfUrl) { link.href = pdfUrl; }
+  };
+})();
+</script>
+
+<style>
+/* ── MOBILE PERFORMANCE ── */
+@media (max-width: 767px) {
+  /* Disable heavy backdrop-blur on mobile GPUs */
+  nav, .cookie-inner, .exp-modal-inner {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: rgba(6,6,10,0.97) !important;
+  }
+  /* Reduce ticker to CSS-only, pause when not visible */
+  .icon-ticker { contain: layout style; }
+  /* Disable custom cursor on touch (already hidden but stop the JS overhead) */
+  #cursor-outer, #cursor-inner { display: none !important; }
+  /* Reduce box-shadow complexity */
+  .exp-card { box-shadow: 0 4px 16px rgba(0,0,0,0.4) !important; }
+  .pkg-card { box-shadow: 0 4px 16px rgba(0,0,0,0.4) !important; }
+  /* Avoid painting large fixed elements */
+  nav { will-change: auto; }
+  /* Reduce animation complexity */
+  .hero-grid { display: none; }
+  /* Contain expensive sections */
+  .exp-grid { contain: layout; }
+}
+
+/* Pause ticker when tab not visible */
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track { animation: none !important; }
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+</style>
+
+<script>
+// Intersection Observer for below-fold images - mobile bandwidth saver
+if ('IntersectionObserver' in window) {
+  var imgObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var img = entry.target;
+        if (img.dataset.src) {
+          img.src = img.dataset.src;
+          img.removeAttribute('data-src');
+          imgObserver.unobserve(img);
+        }
+      }
+    });
+  }, { rootMargin: '200px' });
+
+  // Observe all lazy images
+  document.querySelectorAll('img[loading="lazy"]').forEach(function(img) {
+    imgObserver.observe(img);
+  });
+}
+
+// ── NAV SEARCH ──
+(function() {
+  var searchData = [
+    { name: 'Wellness & Spa', loc: 'Europe', icon: 'fa-spa', id: 'wellness-card' },
+    { name: 'VIP Tickets', loc: 'Worldwide', icon: 'fa-ticket-alt', id: 'events-card' },
+    { name: 'Private Jet Charter', loc: 'Worldwide', icon: 'fa-plane', id: 'jet-card' },
+    { name: 'Chauffeur Services', loc: 'Worldwide', icon: 'fa-car', id: 'chauffeur-card' },
+    { name: 'Car Detailing', loc: 'London', icon: 'fa-star', id: 'detailing-card' },
+    { name: 'Personal Security', loc: 'Worldwide', icon: 'fa-shield-alt', id: 'security-card' },
+    { name: 'Private Dining', loc: 'Worldwide', icon: 'fa-utensils', id: 'dining-card' },
+    { name: 'Yacht & Cruise Events', loc: 'Mediterranean · Caribbean', icon: 'fa-ship', id: 'yacht-events-card' },
+    { name: 'Helicopter Tours', loc: 'Worldwide', icon: 'fa-helicopter', id: 'heli-card' },
+    { name: 'Luxury Cars', loc: 'Worldwide', icon: 'fa-car-side', id: 'luxcars-card' },
+    { name: 'Jet Ski', loc: 'Dubai · Maldives · Miami', icon: 'fa-water', id: 'jetski-card' },
+    { name: 'Jet Car', loc: 'UAE · USA', icon: 'fa-bolt', id: 'jetcar-card' },
+    { name: 'Dune Buggy', loc: 'Dubai · Morocco · Qatar', icon: 'fa-truck-monster', id: 'dunebuggy-card' },
+    { name: 'Quad Bikes', loc: 'Worldwide', icon: 'fa-motorcycle', id: 'quadbikes-card' },
+    { name: 'Flyboard', loc: 'Dubai · Ibiza · Miami', icon: 'fa-tint', id: 'flyboard-card' },
+    { name: 'E-foil', loc: 'Maldives · Bali · Hawaii', icon: 'fa-wind', id: 'efoil-card' },
+    { name: 'Jetpack', loc: 'Dubai · Miami · Monaco', icon: 'fa-rocket', id: 'jetpack-card' },
+    { name: 'Swim with Dolphins', loc: 'Maldives · Mexico', icon: 'fa-fish', id: 'dolphins-card' },
+    { name: 'Donut Ride', loc: 'Dubai · Miami · Ibiza', icon: 'fa-life-ring', id: 'donutride-card' },
+    { name: 'Waterski', loc: 'Dubai · Monaco · Maldives', icon: 'fa-skiing-nordic', id: 'waterski-card' },
+    { name: 'Camel Ride', loc: 'Dubai · Morocco · Jordan', icon: 'fa-paw', id: 'camelride-card' },
+    { name: 'Falconry', loc: 'UAE · Scotland · Kazakhstan', icon: 'fa-dove', id: 'falconry-card' },
+    { name: 'Skypool Experience', loc: 'Dubai · Singapore · Bangkok', icon: 'fa-swimming-pool', id: 'skypool-card' },
+    { name: 'Apartments & Villas', loc: 'Worldwide', icon: 'fa-home', id: 'apartments-card' },
+  ];
+
+  var btn = document.getElementById('navSearchBtn');
+  var wrap = document.getElementById('navSearchWrap');
+  var input = document.getElementById('navSearchInput');
+  var clear = document.getElementById('navSearchClear');
+  var results = document.getElementById('nav-search-results');
+
+  function openSearch() {
+    wrap.classList.add('open');
+    setTimeout(function() { input.focus(); }, 350);
+  }
+  function closeSearch() {
+    wrap.classList.remove('open');
+    input.value = '';
+    clear.classList.remove('visible');
+    results.style.display = 'none';
+  }
+
+  btn.addEventListener('click', function() {
+    wrap.classList.contains('open') ? closeSearch() : openSearch();
+  });
+
+  clear.addEventListener('click', function() {
+    input.value = '';
+    clear.classList.remove('visible');
+    results.style.display = 'none';
+    input.focus();
+  });
+
+  input.addEventListener('input', function() {
+    var q = input.value.trim().toLowerCase();
+    clear.classList.toggle('visible', q.length > 0);
+    if (!q) { results.style.display = 'none'; return; }
+    var matches = searchData.filter(function(item) {
+      return item.name.toLowerCase().includes(q) || item.loc.toLowerCase().includes(q);
+    });
+    if (!matches.length) {
+      results.innerHTML = '<div class="nav-search-no-results">No results for "' + input.value + '"</div>';
+    } else {
+      results.innerHTML = matches.slice(0, 6).map(function(item) {
+        return '<div class="nav-search-result-item" onclick="(function(){var c=document.getElementById(\'' + item.id + '\');if(c){c.scrollIntoView({behavior:\'smooth\',block:\'center\'});c.click();}document.getElementById(\'nav-search-results\').style.display=\'none\';document.getElementById(\'navSearchWrap\').classList.remove(\'open\');document.getElementById(\'navSearchInput\').value=\'\';document.getElementById(\'navSearchClear\').classList.remove(\'visible\');})()">'
+          + '<span class="nav-search-result-icon"><i class="fas ' + item.icon + '"></i></span>'
+          + '<div><div class="nav-search-result-name">' + item.name + '</div>'
+          + '<div class="nav-search-result-loc">' + item.loc + '</div></div>'
+          + '</div>';
+      }).join('');
+    }
+    results.style.display = 'block';
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!wrap.contains(e.target) && e.target !== btn && !btn.contains(e.target) && !results.contains(e.target)) {
+      closeSearch();
+    }
+  });
+
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeSearch();
+  });
+})();
+
+// Pause ticker animation when off-screen
+if ('IntersectionObserver' in window) {
+  var tickerObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      var track = document.getElementById('tickerTrack');
+      if (track) track.style.animationPlayState = e.isIntersecting ? 'running' : 'paused';
+    });
+  });
+  var ticker = document.querySelector('.icon-ticker');
+  if (ticker) tickerObserver.observe(ticker);
+}
+</script>
+</body>
+</html>
